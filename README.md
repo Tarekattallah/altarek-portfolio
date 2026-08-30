@@ -77,7 +77,7 @@ To run this project locally, you need a local web server (to avoid CORS issues w
    ```
 
 3. **View in browser**
-   Open `http://localhost:3000`
+   Open `https://altarek-portfolio.vercel.app`
 
 ---
 <div align="center">
