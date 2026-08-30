@@ -5,6 +5,7 @@ import { initHeroFeature } from '../features/1-hero/hero.js';
 import { initWorkFeature } from '../features/2-work/work.js';
 import { initExperienceFeature } from '../features/3-experience/experience.js';
 import { initContactForm } from '../features/4-contact/contact.js'; // <-- إضافة جديدة
+import { initBlogFeature } from '../features/5-blog/blog.js';
 
 // Initialize preloader as soon as possible
 initPreloader();
@@ -17,5 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initHeroFeature();
     initWorkFeature();
     initExperienceFeature();
+    initBlogFeature();
     initContactForm(); // <-- إضافة جديدة
 });

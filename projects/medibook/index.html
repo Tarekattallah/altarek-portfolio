@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediBook — Appointment Management | Case Study</title>
+    
+    <meta name="description" content="Case study for MediBook, a full-stack MERN appointment management application.">
+    
+    <link rel="icon" type="image/svg+xml" href="../../src/assets/images/logo-pro.svg" />
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../../src/assets/css/global.css">
+    <link rel="stylesheet" href="../../src/features/5-blog/blog.css">
+    <link rel="stylesheet" href="../../src/features/5-blog/article.css">
+</head>
+<body class="overflow-x-hidden bg-[#0a0f18]">
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Header -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 bg-gray-900/80 backdrop-blur-sm transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../../index.html" class="text-2xl font-bold text-white flex items-center gap-2 transform hover:scale-105 transition-transform">
+                <img src="../../src/assets/images/logo-pro.svg" alt="T. Attallah Logo" class="w-10 h-10 rounded-full object-cover border-2 border-blue-600">
+                <span>T. Attallah</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="../../index.html#home" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Home</a>
+                <a href="../../index.html#work" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Work</a>
+                <a href="../../index.html#about" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">About</a>
+                <a href="../../blog/" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Blog</a>
+            </nav>
+            <button id="mobile-menu-btn" class="md:hidden text-white" title="Open mobile menu" aria-label="Open mobile menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 bg-gray-900/80 backdrop-blur-sm">  
+            <a href="../../index.html#home" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Home</a>
+            <a href="../../index.html#work" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Work</a>
+            <a href="../../index.html#about" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">About</a>
+            <a href="../../blog/" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Blog</a>
+        </div>
+    </header>
+
+    <main class="pt-32 pb-20 container mx-auto px-6 min-h-screen max-w-4xl" data-project-slug="medibook">
+        
+        <div class="mb-8">
+            <a href="../" class="text-gray-400 hover:text-blue-500 flex items-center gap-2 transition-colors w-fit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Back to Projects
+            </a>
+        </div>
+
+        <article>
+            <header class="mb-12 text-center md:text-left">
+                <span class="text-blue-500 font-semibold uppercase tracking-wider mb-4 block">Full Stack Application</span>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">MediBook — Appointment Management</h1>
+                <p class="text-xl text-gray-400 leading-relaxed max-w-3xl">A web-based healthcare appointment management platform designed to simplify scheduling using the MERN stack.</p>
+                <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 mt-8">
+                    <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded text-sm font-medium">React</span>
+                    <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded text-sm font-medium">Node.js</span>
+                    <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded text-sm font-medium">Express.js</span>
+                    <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded text-sm font-medium">MongoDB</span>
+                </div>
+            </header>
+
+            <div class="w-full h-64 md:h-96 rounded-xl overflow-hidden mb-12 shadow-2xl relative group">
+                <img src="../../src/assets/images/projects/medibook.jpg" alt="MediBook Dashboard" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            </div>
+
+            <div class="prose prose-invert prose-blue max-w-none">
+                
+                <h2>Overview</h2>
+                <p>MediBook is a full-stack web application designed to alleviate the common friction points found in healthcare scheduling. It provides a seamless interface for patients to book appointments and for clinic administrators to manage availability.</p>
+                
+                <h2>The Problem</h2>
+                <p>Traditional clinic scheduling often relies on phone calls and manual ledgers, leading to double-bookings, missed appointments, and administrative bloat. A modern, digital approach was required to handle real-time availability and user notifications.</p>
+                
+                <h2>The Solution</h2>
+                <p>Built using the MERN stack (MongoDB, Express.js, React, Node.js), MediBook offers a responsive frontend for users to browse availability and a robust backend REST API to securely process bookings.</p>
+                
+                <h2>Key Features</h2>
+                <ul>
+                    <li><strong>Patient Portal:</strong> A user-friendly React frontend allowing patients to register, view schedules, and book open slots.</li>
+                    <li><strong>Admin Dashboard:</strong> A secure interface for clinic staff to manage daily schedules, approve appointments, and update doctors' availability.</li>
+                    <li><strong>RESTful API:</strong> A scalable Node.js/Express backend that handles all business logic and CRUD operations securely.</li>
+                    <li><strong>Database Integration:</strong> MongoDB utilized for flexible document storage, managing complex relationships between patients, doctors, and appointments.</li>
+                </ul>
+
+                <h2>Engineering Challenges</h2>
+                <p>Handling timezone discrepancies and preventing double-bookings required careful date/time manipulation on the backend. The API validates all incoming booking requests against the database in real-time, using transactional constraints to ensure a slot is locked the moment it is selected by a user.</p>
+
+                <h2>Lessons Learned</h2>
+                <p>Working on MediBook solidified my full-stack integration skills, particularly the communication between a React SPA (Single Page Application) and a secure REST API. It highlighted the importance of handling loading states, error boundaries, and optimistic UI updates on the frontend to provide a smooth user experience even when backend latency occurs.</p>
+
+            </div>
+        </article>
+
+    </main>
+
+    <footer class="py-6 text-center text-gray-500 border-t border-gray-800">
+        <p>Designed & Built by Al-Tarek Attallah</p>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button id="scrollToTopBtn" class="fixed bottom-8 right-8 w-12 h-12 bg-blue-600/80 backdrop-blur-sm text-white rounded-full hidden justify-center items-center shadow-lg hover:bg-blue-500 transition-all duration-300 translate-y-20 z-40">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" /></svg>
+    </button>
+
+    <script type="module">
+        import { initGeneralUI } from '../../src/shared/ui/ui.js';
+        import { initParticles } from '../../src/shared/ui/particles.js';
+        document.addEventListener('DOMContentLoaded', () => { 
+            initGeneralUI(); 
+            initParticles(); 
+        });
+    </script>
+</body>
+</html>

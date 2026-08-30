@@ -1,115 +1,85 @@
-# Flutter Developer Portfolio
+<div align="center">
+  <img src="src/assets/images/logo-pro.svg" alt="Al-Tarek Attallah" width="120" />
+</div>
 
-[![Portfolio Screenshot](src/assets/images/screencapture-modola0100-github-io-Portfolio-2025-11-01-12_53_19.png)
+<h1 align="center">Al-Tarek Attallah | Full Stack Software Engineer Portfolio</h1>
 
-**[🚀 View Live Demo](https://modola0100.github.io/-Portfolio/)**
-*(Note: Replace the URL with your actual GitHub Pages link)*
+<p align="center">
+  <strong>A modern, high-performance portfolio showcasing enterprise-grade engineering projects, real-world case studies, and technical writing.</strong>
+</p>
 
----
-
-## 📖 About This Project
-
-This is my personal developer portfolio, designed to showcase my skills, projects, and experience as a Flutter Developer. It is built as a clean, modern, single-page application (SPA) using **vanilla HTML, Tailwind CSS, and modular JavaScript (ES6)**.
-
-The project emphasizes a clean UI/UX, subtle micro-interactions, and a clear separation of concerns by splitting each logical section into its own self-contained JavaScript module.
-
----
-
-## ✨ Key Features
-
-This portfolio is packed with modern web features to create an engaging user experience:
-
-* **🎨 Fully Responsive Design:** Looks and works great on all devices, from mobile phones to desktops.
-* **🌌 Interactive Particle Background:** A dynamic `HTML5 Canvas` particle background that subtly animates and interacts with the user's mouse (repulsion effect).
-* **🌟 Scroll Animations:** Elements fade and slide into view as you scroll, powered by the `ScrollReveal.js` library.
-* **✍️ Dynamic Typing Effect:** A "typing" animation in the hero section cycles through key skills.
-* **🎠 Project Carousel:** A touch-friendly, autoplaying project slider built with `Swiper.js`.
-* **🔍 Project Detail Modal:** A clean modal pops up to display detailed information, images, and links for each project.
-* **🗂️ Interactive Experience Tabs:** A tabbing system to cleanly organize and display work history.
-* **🔄 3D Flipping Contact Card:** A 3D card in the contact section that flips on hover to reveal the contact form.
-* **📬 AJAX Contact Form:** The Formspree contact form is submitted via JavaScript's `fetch` API without a page reload, providing instant validation and success messages.
-* **✒️ Animated Form Inputs:** Modern, Material Design-inspired form fields with an animated underline on focus.
+<p align="center">
+  <a href="#features">Features</a> •
+  <a href="#tech-stack">Tech Stack</a> •
+  <a href="#architecture">Architecture</a> •
+  <a href="#local-development">Local Development</a>
+</p>
 
 ---
 
-## 🛠️ Tech Stack & Libraries
+## 🚀 Overview
 
-* **Core:** HTML5, CSS3, JavaScript (ES6 Modules)
-* **Styling:** Tailwind CSS (via CDN)
-* **Animations:** `ScrollReveal.js`, `Swiper.js`
-* **Backend (Contact Form):** [Formspree](https://formspree.io/)
+This repository contains the source code for my personal portfolio website. It is designed to act not just as a resume, but as a demonstration of clean code, modular architecture, and modern UI/UX principles.
 
----
+The portfolio heavily emphasizes **Backend & Enterprise Engineering** while maintaining a sleek, fully responsive, and animated frontend interface.
+
+## ✨ Features
+
+- **Dynamic Project Showcase:** A scalable, data-driven projects hub (`/projects/`) rendering project cards dynamically.
+- **In-Depth Case Studies:** Dedicated technical breakdowns for complex systems like **MADMS** and the **Military Mess System**, detailing the architecture, database design, and business logic.
+- **Technical Blog:** A custom-built blog section featuring deep dives into AI-assisted development, cloud architecture, and RESTful API design.
+- **Interactive UI:** Smooth reveal animations, custom modal windows, responsive grid layouts, and interactive particles.
+- **Modular Data Structure:** Project data and routing logic is abstracted into external JS modules (`src/data/projects.js`), keeping the HTML clean and maintainable.
+- **Dark/Cyberpunk Aesthetic:** Built with a highly polished, developer-focused dark theme using modern CSS utilities.
+
+## 🛠️ Tech Stack
+
+- **Core:** HTML5, CSS3, Vanilla JavaScript (ES6 Modules)
+- **Styling:** Custom CSS, Tailwind CSS Utility Classes, Flexbox & CSS Grid
+- **Libraries & Tools:** 
+  - [Swiper.js](https://swiperjs.com/) for interactive sliders
+  - [Prism.js](https://prismjs.com/) for syntax highlighting in blog posts
+  - [FormSubmit](https://formsubmit.co/) for serverless contact form handling
+- **Architecture:** Component-based file structure (Features, Shared UI, Data layers)
 
 ## 📂 Project Structure
 
-The project uses a modular, feature-based directory structure to keep the code organized and maintainable.
-
-```
-/portfolio-project
-├── index.html
-├── README.md
+```text
+├── index.html                   # Main homepage
+├── projects/                    # Projects Hub & Case Studies
+│   ├── index.html               # All projects grid
+│   ├── madms/                   # Enterprise System Case Study
+│   ├── medibook/                # Healthcare App Case Study
+│   └── military-mess/           # Logistics App Case Study
+├── blog/                        # Technical Articles
+│   └── index.html               # Blog listing page
 └── src/
-    ├── assets/
-    │   ├── css/
-    │   │   └── global.css
-    │   ├── images/
-    │   │   ├── 2.png
-    │   │   ├── 3.png
-    │   │   └── ...
-    │   └── resume/
-    │       └── Mohamed_Adel_Resume.pdf
-    │
-    ├── features/
-    │   ├── 1-hero/
-    │   │   └── hero.js
-    │   ├── 2-work/
-    │   │   ├── work.css
-    │   │   └── work.js
-    │   ├── 3-experience/
-    │   │   └── experience.js
-    │   └── 4-contact/
-    │       ├── contact.css
-    │       └── contact.js
-    │
-    └── shared/
-        ├── app.js       (Main JS entry point)
-        └── ui/
-            ├── animations.js
-            ├── particles.js
-            └── ui.js      (General UI elements like header, mobile menu)
+    ├── assets/                  # CSS, Images, and Global Styles
+    ├── data/                    # JSON/JS data models (projects.js)
+    ├── features/                # Feature-specific logic (Hero, Work, Experience, Blog)
+    └── shared/                  # Shared UI components (Modals, Preloader, Nav)
 ```
 
----
+## 💻 Local Development
 
-## 🚀 Getting Started
+To run this project locally, you need a local web server (to avoid CORS issues with ES6 modules).
 
-To run this project locally:
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/modola0100/-Portfolio.git
+   cd -Portfolio
+   ```
 
-1.  **Clone the repository:**
-    ```sh
-    git clone [https://github.com/modola0100/portfolio.git](https://github.com/modola0100/portfolio.git)
-    ```
+2. **Serve the project**
+   You can use any local server, such as `serve`, `http-server`, or the VS Code Live Server extension.
+   ```bash
+   npx serve .
+   ```
 
-2.  **Navigate to the project directory:**
-    ```sh
-    cd portfolio
-    ```
-
-3.  **Open `index.html` in your browser.**
-    * For the best experience (to avoid CORS errors with module imports), it's recommended to use a simple local server, like the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension in VS Code.
-
----
-
-## 👨‍💻 Author
-
-* **Mohamed Adel**
-* **GitHub:** [@modola0100](https://github.com/modola0100)
-* **LinkedIn:** [mohamed-adel-051ba4256](https://www.linkedin.com/in/mohamed-adel-051ba4256)
+3. **View in browser**
+   Open `http://localhost:3000`
 
 ---
-
-## 🙏 Acknowledgements
-
-* Design and branding inspired by the **Flutter Framework**.
-* Libraries: [Swiper.js](https://swiperjs.com/) & [ScrollReveal.js](https://scrollrevealjs.org/).
+<div align="center">
+  <p>Designed and Built by <b>Al-Tarek Attallah</b></p>
+</div>

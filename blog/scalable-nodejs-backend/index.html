@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building a Scalable Node.js Backend - Al-Tarek Attallah</title>
+    <meta name="description" content="How I structure a scalable Node.js backend using separation of concerns, modular architecture, controllers, services, repositories, and models.">
+    <link rel="canonical" href="https://tarekattallah.github.io/-Portfolio/blog/scalable-nodejs-backend/">
+    
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Building a Scalable Node.js Backend">
+    <meta property="og:description" content="How I structure a scalable Node.js backend using separation of concerns, modular architecture, controllers, services, repositories, and models.">
+    <meta property="og:image" content="https://picsum.photos/seed/backend/800/500">
+    
+    <link rel="icon" type="image/svg+xml" href="../../src/assets/images/logo-pro.svg" />
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Prism Syntax Highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="../../src/assets/css/global.css">
+    <link rel="stylesheet" href="../../src/features/5-blog/blog.css">
+    <link rel="stylesheet" href="../../src/features/5-blog/article.css">
+</head>
+<body class="overflow-x-hidden bg-[#0a0f18]">
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Header -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 bg-gray-900/80 backdrop-blur-sm transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../../index.html" class="text-2xl font-bold text-white flex items-center gap-2 transform hover:scale-105 transition-transform">
+                <img src="../../src/assets/images/logo-pro.svg" alt="T. Attallah Logo" class="w-10 h-10 rounded-full object-cover border-2 border-blue-600">
+                <span>T. Attallah</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="../../index.html#home" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Home</a>
+                <a href="../../index.html#work" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Work</a>
+                <a href="../../index.html#about" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">About</a>
+                <a href="../" class="nav-item text-blue-500 transition duration-300">Blog</a>
+            </nav>
+            <button id="mobile-menu-btn" class="md:hidden text-white" title="Open mobile menu" aria-label="Open mobile menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 bg-gray-900/80 backdrop-blur-sm">  
+            <a href="../../index.html#home" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Home</a>
+            <a href="../../index.html#work" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Work</a>
+            <a href="../../index.html#about" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">About</a>
+            <a href="../" class="block py-2 text-blue-500 transition duration-300">Blog</a>
+        </div>
+    </header>
+
+    <main class="pt-32 pb-20 container mx-auto px-6 min-h-screen max-w-4xl" data-article-slug="scalable-nodejs-backend">
+        
+        <div class="mb-8">
+            <a href="../" class="text-gray-400 hover:text-blue-500 flex items-center gap-2 transition-colors w-fit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Back to Blog
+            </a>
+        </div>
+
+        <article>
+            <header class="mb-12 text-center md:text-left">
+                <span class="text-blue-500 font-semibold uppercase tracking-wider mb-4 block">Backend Engineering</span>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">Building a Scalable Node.js Backend</h1>
+                <p class="text-xl text-gray-400 mb-8 leading-relaxed">How I structure a scalable Node.js backend using separation of concerns, modular architecture, controllers, services, repositories, and models.</p>
+                
+                <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 text-sm text-gray-500 mb-8 border-y border-gray-800 py-4">
+                    <span class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                        Oct 15, 2025
+                    </span>
+                    <span>•</span>
+                    <span class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        5 min read
+                    </span>
+                </div>
+
+                <div class="flex flex-wrap gap-2 justify-center md:justify-start mb-8">
+                    <span class="bg-gray-800 text-gray-400 text-xs px-3 py-1.5 rounded-full">Node.js</span><span class="bg-gray-800 text-gray-400 text-xs px-3 py-1.5 rounded-full">Express</span><span class="bg-gray-800 text-gray-400 text-xs px-3 py-1.5 rounded-full">Architecture</span><span class="bg-gray-800 text-gray-400 text-xs px-3 py-1.5 rounded-full">Backend</span>
+                </div>
+
+                <img src="https://picsum.photos/seed/backend/800/500" alt="Building a Scalable Node.js Backend" class="w-full rounded-2xl shadow-2xl mb-12 border border-gray-800">
+            </header>
+
+            <div class="article-content">
+                <p>When I first started learning Node.js and Express, my approach was simple: put everything inside the route handler. It worked perfectly for small projects and tutorials. But as I started building more complex applications, I quickly realized that this approach leads to messy, unreadable, and hard-to-test code—often called "Spaghetti Code."</p>
+                <p>In this post, I want to share my journey of moving from a basic Express setup to a structured, scalable modular architecture. This is a crucial step for any junior developer looking to build production-ready backend systems.</p>
+                
+                <h2>The Problem: Fat Controllers</h2>
+                <p>Here is what my early code looked like. Everything—from parsing the request, validating data, checking the database, hashing passwords, and sending the response—was stuffed into one massive function.</p>
+                
+                <pre><code class="language-javascript">
+// The "Bad" Way: Doing everything in the route handler
+app.post('/api/users/register', async (req, res) => {
+    try {
+        // 1. Validation
+        if (!req.body.email || !req.body.password) {
+            return res.status(400).json({ error: 'Missing fields' });
+        }
+        
+        // 2. Database check
+        const existingUser = await User.findOne({ email: req.body.email });
+        if (existingUser) {
+            return res.status(400).json({ error: 'Email already in use' });
+        }
+        
+        // 3. Business logic (hashing password)
+        const salt = await bcrypt.genSalt(10);
+        const hashedPassword = await bcrypt.hash(req.body.password, salt);
+        
+        // 4. Database save
+        const newUser = new User({
+            email: req.body.email,
+            password: hashedPassword
+        });
+        await newUser.save();
+        
+        // 5. Send response
+        res.status(201).json({ message: 'User created' });
+    } catch (error) {
+        res.status(500).json({ error: 'Server error' });
+    }
+});
+                </code></pre>
+                
+                <p>This works, but imagine having 50 routes like this! It becomes impossible to maintain or test the business logic without mocking the entire HTTP request.</p>
+
+                <h2>The Solution: Separation of Concerns</h2>
+                <p>To solve this, I learned about a 3-layer architecture often used in Node.js applications: <strong>Controllers</strong>, <strong>Services</strong>, and <strong>Repositories (or Models)</strong>.</p>
+                
+                <ul>
+                    <li><strong>Controllers:</strong> Their only job is to handle HTTP requests. They receive the request, pass data to the service, and send back the HTTP response.</li>
+                    <li><strong>Services:</strong> This is where the core business logic lives. They don't know anything about HTTP (req, res).</li>
+                    <li><strong>Models/Repositories:</strong> They handle direct communication with the database.</li>
+                </ul>
+
+                <h2>The Refactored Code</h2>
+                <p>Here is how that same registration logic looks when properly separated:</p>
+
+                <h3>1. The Service Layer (user.service.js)</h3>
+                <pre><code class="language-javascript">
+const User = require('../models/User');
+const bcrypt = require('bcrypt');
+
+class UserService {
+    async registerUser(email, password) {
+        const existingUser = await User.findOne({ email });
+        if (existingUser) {
+            throw new Error('Email already in use');
+        }
+
+        const salt = await bcrypt.genSalt(10);
+        const hashedPassword = await bcrypt.hash(password, salt);
+
+        const newUser = new User({ email, password: hashedPassword });
+        return await newUser.save();
+    }
+}
+
+module.exports = new UserService();
+                </code></pre>
+
+                <h3>2. The Controller Layer (user.controller.js)</h3>
+                <pre><code class="language-javascript">
+const UserService = require('../services/user.service');
+
+class UserController {
+    async register(req, res, next) {
+        try {
+            const { email, password } = req.body;
+            
+            if (!email || !password) {
+                return res.status(400).json({ error: 'Missing fields' });
+            }
+
+            // Call the service (Controller doesn't care HOW the user is created)
+            const newUser = await UserService.registerUser(email, password);
+            
+            res.status(201).json({ message: 'User created', userId: newUser._id });
+        } catch (error) {
+            // Pass to global error handler
+            next(error);
+        }
+    }
+}
+
+module.exports = new UserController();
+                </code></pre>
+
+                <h3>3. The Router (user.routes.js)</h3>
+                <pre><code class="language-javascript">
+const express = require('express');
+const UserController = require('../controllers/user.controller');
+const router = express.Router();
+
+router.post('/register', UserController.register);
+
+module.exports = router;
+                </code></pre>
+
+                <h2>Why this matters for Junior Developers</h2>
+                <p>Taking the time to structure my projects this way felt like extra work at first. But the benefits were immediate:</p>
+                <ol>
+                    <li><strong>Easier to Read:</strong> When I look at a route, I immediately know what it does.</li>
+                    <li><strong>Reusable Code:</strong> If I need to create a user from an Admin dashboard or a CLI script, I can just call <code>UserService.registerUser()</code> without faking an HTTP request.</li>
+                    <li><strong>Better Testing:</strong> I can write unit tests for my Service layer easily because it's just plain JavaScript functions returning data.</li>
+                </ol>
+
+                <p>Learning this architecture was a huge turning point for me. It bridged the gap between writing code that <em>just works</em>, and writing code that is <em>professional and maintainable</em>.</p>
+            </div>
+        </article>
+
+        <!-- Previous / Next Navigation -->
+        <div class="mt-16 pt-8 border-t border-gray-800 flex justify-between gap-4" id="prev-next-nav">
+            <!-- Injected via JS -->
+        </div>
+
+        <!-- Related Articles -->
+        <section class="mt-20 pt-12 border-t border-gray-800" id="related-articles-section">
+            <h3 class="text-2xl font-bold text-white mb-8">Related Articles</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="related-articles">
+                <!-- Injected via JS -->
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-6 text-center text-gray-500 bg-gray-900/50">
+        <p>Designed & Built by Al-Tarek Attallah</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+    
+    <script type="module">
+        import { initGeneralUI } from '../../src/shared/ui/ui.js';
+        import { initParticles } from '../../src/shared/ui/particles.js';
+        import { initArticlePage } from '../../src/features/5-blog/article.js';
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initGeneralUI(); initParticles();
+            initArticlePage();
+        });
+    </script>
+</body>
+</html>

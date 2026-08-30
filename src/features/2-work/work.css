@@ -24,7 +24,7 @@
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px -15px rgba(1, 181, 248, 0.2);
+    box-shadow: 0 10px 30px -15px rgba(59, 130, 246, 0.2);
 }
 
 .project-card__top {
@@ -77,5 +77,15 @@
 }
 
 .project-card__links a:hover {
-    color: #01b5f8;
+    color: #3b82f6;
+}
+
+/* Tech dot indicator */
+.tech-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #3b82f6;
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.6);
 }

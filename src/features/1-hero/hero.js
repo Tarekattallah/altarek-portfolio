@@ -1,5 +1,5 @@
 function typeEffect() {
-    const words = ["Flutter.", "Web Apps.", "Mobile Apps.", "Great UI/UX."];
+    const words = [" HTML, CSS, JavaScript, React, Node.js, and scalable backend systems.", "Web Apps.", "modern web development — from frontend to backend.", "Great UI/UX."];
     let wordIndex = 0, charIndex = 0, isDeleting = false;
     const typingElement = document.getElementById("typing-text");
     if (!typingElement) return;

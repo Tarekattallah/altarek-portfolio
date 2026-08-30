@@ -63,7 +63,7 @@ export function initParticles() {
             let y = (Math.random() * ((innerHeight - size * 2) - (size * 2)) + size * 2);
             let directionX = (Math.random() * 0.4) - 0.2;
             let directionY = (Math.random() * 0.4) - 0.2;
-            let color = 'rgba(2, 86, 155, 0.5)';
+            let color = 'rgba(59, 130, 246, 0.5)';
             particlesArray.push(new Particle(x, y, directionX, directionY, size, color));
         }
     }

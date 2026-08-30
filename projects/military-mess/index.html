@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Military Mess & Warehouse Management | Case Study</title>
+    
+    <meta name="description" content="Case study for Military Mess & Warehouse Management System, focusing on operational inventory management and business logic.">
+    
+    <link rel="icon" type="image/svg+xml" href="../../src/assets/images/logo-pro.svg" />
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../../src/assets/css/global.css">
+    <link rel="stylesheet" href="../../src/features/5-blog/blog.css">
+    <link rel="stylesheet" href="../../src/features/5-blog/article.css">
+</head>
+<body class="overflow-x-hidden bg-[#0a0f18]">
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Header -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 bg-gray-900/80 backdrop-blur-sm transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../../index.html" class="text-2xl font-bold text-white flex items-center gap-2 transform hover:scale-105 transition-transform">
+                <img src="../../src/assets/images/logo-pro.svg" alt="T. Attallah Logo" class="w-10 h-10 rounded-full object-cover border-2 border-blue-600">
+                <span>T. Attallah</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="../../index.html#home" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Home</a>
+                <a href="../../index.html#work" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Work</a>
+                <a href="../../index.html#about" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">About</a>
+                <a href="../../blog/" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Blog</a>
+            </nav>
+            <button id="mobile-menu-btn" class="md:hidden text-white" title="Open mobile menu" aria-label="Open mobile menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 bg-gray-900/80 backdrop-blur-sm">  
+            <a href="../../index.html#home" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Home</a>
+            <a href="../../index.html#work" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Work</a>
+            <a href="../../index.html#about" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">About</a>
+            <a href="../../blog/" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Blog</a>
+        </div>
+    </header>
+
+    <main class="pt-32 pb-20 container mx-auto px-6 min-h-screen max-w-4xl" data-project-slug="military-mess">
+        
+        <div class="mb-8">
+            <a href="../" class="text-gray-400 hover:text-blue-500 flex items-center gap-2 transition-colors w-fit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Back to Projects
+            </a>
+        </div>
+
+        <article>
+            <header class="mb-12 text-center md:text-left">
+                <span class="text-blue-500 font-semibold uppercase tracking-wider mb-4 block">Enterprise Management</span>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">Military Mess & Warehouse Management System</h1>
+                <p class="text-xl text-gray-400 leading-relaxed max-w-3xl">A comprehensive management system translating real-world military logistics into structured software business logic.</p>
+                <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 mt-8">
+                    <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded text-sm font-medium">Backend Logic</span>
+                    <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded text-sm font-medium">Inventory Modeling</span>
+                    <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded text-sm font-medium">Data Allocation</span>
+                </div>
+            </header>
+
+            <div class="w-full h-64 md:h-96 rounded-xl overflow-hidden mb-12 shadow-2xl relative group">
+                <img src="../../src/assets/images/projects/military-mess.jpg" alt="Military Mess Dashboard" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            </div>
+
+            <div class="prose prose-invert prose-blue max-w-none">
+                
+                <h2>Overview</h2>
+                <p>The Military Mess & Warehouse Management System is designed to support the complex operations surrounding military mess halls. It handles everything from food supply inventory and meal planning to tracking stock consumption and predicting reorder logic based on daily reservations.</p>
+                
+                <h2>The Problem</h2>
+                <p>Military logistics require extreme accuracy. Managing inventory manually or via spreadsheets leads to food waste, expiration issues, and inaccurate consumption forecasting. The system needed a way to automate inventory deductions based on specific meal reservations while strictly adhering to expiry-based stock rotation.</p>
+                
+                <h2>The Solution</h2>
+                <p>I architected a backend solution heavily focused on transforming real-world business rules into maintainable software operations. By utilizing robust inventory algorithms, the system automatically pulls from warehouse stock logically and warns administrators of impending expiry or low stock.</p>
+                
+                <h2>Key Features & Business Logic</h2>
+                <ul>
+                    <li><strong>Meal Management & Reservations:</strong> Handled daily meal planning linked to headcount reservations.</li>
+                    <li><strong>Inventory & Stock Tracking:</strong> Accurate tracking of all incoming and outgoing warehouse items.</li>
+                    <li><strong>FEFO/FIFO Allocation:</strong> Implemented <em>First-Expired, First-Out</em> (FEFO) logic to prioritize the consumption of items nearing expiration, severely reducing food waste.</li>
+                    <li><strong>Consumption Calculations:</strong> Automated deduction of raw ingredients based on predefined meal recipes and reservation counts.</li>
+                    <li><strong>Notifications & Dashboards:</strong> Alert systems for reorder logic when stock hits minimum thresholds.</li>
+                </ul>
+
+                <h2>Engineering Challenges</h2>
+                <p>The most significant challenge was the <strong>Allocation Engine</strong>. When a meal is reserved, the system doesn't just deduct generic "rice" or "meat". It must iterate through warehouse batches, find the batches with the earliest expiry dates, and deduct the exact quantities from those specific batches across multiple lots. This required writing complex, transaction-safe database logic to prevent race conditions during concurrent updates.</p>
+
+                <h2>Lessons Learned</h2>
+                <p>This project was a deep dive into domain-driven design. It taught me how to sit with domain experts (military logistics personnel), understand their manual constraints, and accurately model those constraints into database schemas and scalable backend services.</p>
+
+            </div>
+        </article>
+
+    </main>
+
+    <footer class="py-6 text-center text-gray-500 border-t border-gray-800">
+        <p>Designed & Built by Al-Tarek Attallah</p>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button id="scrollToTopBtn" class="fixed bottom-8 right-8 w-12 h-12 bg-blue-600/80 backdrop-blur-sm text-white rounded-full hidden justify-center items-center shadow-lg hover:bg-blue-500 transition-all duration-300 translate-y-20 z-40">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" /></svg>
+    </button>
+
+    <script type="module">
+        import { initGeneralUI } from '../../src/shared/ui/ui.js';
+        import { initParticles } from '../../src/shared/ui/particles.js';
+        document.addEventListener('DOMContentLoaded', () => { 
+            initGeneralUI(); 
+            initParticles(); 
+        });
+    </script>
+</body>
+</html>

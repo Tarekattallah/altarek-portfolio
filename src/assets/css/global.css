@@ -15,15 +15,15 @@ body {
 }
 
 /* Flutter-inspired colors & helpers */
-.flutter-blue { color: #01b5f8; }
-.flutter-teal { color: #02569B; }
-.border-flutter-blue { border-color: #01b5f8; }
-.hover\:text-flutter-blue:hover { color: #01b5f8; }
+.flutter-blue { color: #3b82f6; }
+.flutter-teal { color: #23252a; }
+.border-flutter-blue { border-color: #3b82f6; }
+.hover\:text-flutter-blue:hover { color: #3b82f6; }
 
 /* Global Animations */
 @keyframes pulse {
-    0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(1, 181, 248, 0.7); }
-    50% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(1, 181, 248, 0); }
+    0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7); }
+50% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(59, 130, 246, 0); }
 }
 .animate-pulse-resume { animation: pulse 2s infinite; }
 
@@ -31,7 +31,7 @@ body {
 #typing-text::after {
     content: '|';
     animation: blink 1s step-end infinite;
-    color: #01b5f8;
+    color: #3b82f6;
 }
 
 .hero-name span {
@@ -55,7 +55,7 @@ body {
     transform: translateX(-50%);
     width: 0;
     height: 2px;
-    background-color: #01b5f8;
+    background-color: #3b82f6;
     transition: width 0.3s ease-in-out;
 }
 .nav-item:hover::after { width: 100%; }
@@ -67,8 +67,8 @@ body {
 /* Custom Scrollbar */
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: #0a0f18; }
-::-webkit-scrollbar-thumb { background: #02569B; border-radius: 10px; }
-::-webkit-scrollbar-thumb:hover { background: #01b5f8; }
+::-webkit-scrollbar-thumb { background: #23252a; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: #3b82f6; }
 
 
 /* === إضافة جديدة === */
@@ -76,7 +76,7 @@ body {
 .experience-tab-btn {
     border-radius: 4px 4px 0 0; /* Add slight rounding */
 }
-.experience-tab-btn:not(.text-blue-400):hover {
-    background-color: rgba(1, 181, 248, 0.08); /* Faint blue background */
+.experience-tab-btn:not(.text-blue-500):hover {
+    background-color: rgba(59, 130, 246, 0.08); /* Faint blue background */
     color: #f0f6fc; /* Lighter text */
 }

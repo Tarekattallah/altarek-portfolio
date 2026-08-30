@@ -8,7 +8,7 @@ export function initContactForm() {
         const formData = new FormData(event.target);
         
         statusEl.textContent = 'Sending...';
-        statusEl.classList.remove('text-red-500', 'text-green-500');
+        statusEl.classList.remove('text-blue-500', 'text-green-500');
 
         try {
             const response = await fetch(event.target.action, {
@@ -30,11 +30,11 @@ export function initContactForm() {
                 } else {
                     statusEl.textContent = 'Oops! There was a problem submitting your form.';
                 }
-                statusEl.classList.add('text-red-500');
+                statusEl.classList.add('text-blue-500');
             }
         } catch (error) {
             statusEl.textContent = 'Oops! There was a network error.';
-            statusEl.classList.add('text-red-500');
+            statusEl.classList.add('text-blue-500');
         }
     }
 
