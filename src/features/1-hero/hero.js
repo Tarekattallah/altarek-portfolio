@@ -29,11 +29,28 @@ function animateHeroText() {
     if (!h1) return;
     const text = h1.textContent;
     h1.innerHTML = '';
-    text.split('').forEach((char, i) => {
-        const span = document.createElement('span');
-        span.textContent = char === ' ' ? '\u00A0' : char;
-        span.style.animationDelay = `${i * 0.05}s`;
-        h1.appendChild(span);
+    
+    let charIndex = 0;
+    const words = text.split(' ');
+    
+    words.forEach((word, wordIdx) => {
+        const wordWrapper = document.createElement('div');
+        wordWrapper.style.display = 'inline-block';
+        
+        word.split('').forEach((char) => {
+            const span = document.createElement('span');
+            span.textContent = char;
+            span.style.animationDelay = `${charIndex * 0.05}s`;
+            wordWrapper.appendChild(span);
+            charIndex++;
+        });
+        
+        h1.appendChild(wordWrapper);
+        
+        if (wordIdx < words.length - 1) {
+            h1.appendChild(document.createTextNode(' '));
+            charIndex++; // Keep index incremented for space
+        }
     });
 }
 
