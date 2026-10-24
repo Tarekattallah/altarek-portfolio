@@ -1,11 +1,20 @@
 export function initPreloader() {
     const preloader = document.getElementById('preloader');
-    window.addEventListener('load', () => {
+    if (!preloader) return;
+
+    let hidden = false;
+    function hide() {
+        if (hidden) return;
+        hidden = true;
         preloader.style.opacity = '0';
         setTimeout(() => {
             preloader.style.display = 'none';
         }, 500);
-    });
+    }
+
+    window.addEventListener('load', hide);
+    // Safety cap: a slow third-party resource should never keep the page hidden
+    setTimeout(hide, 2500);
 }
 
 export function initGeneralUI() {

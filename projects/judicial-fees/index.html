@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egyptian Judicial Fees — Court Fee Calculation Platform | Case Study</title>
+    
+    <meta name="description" content="Case study for the Egyptian Judicial Fees platform: rule-based court fee calculation, RBAC, independent approvals, and SHA-256 hash-chained audit logs.">
+    
+    <link rel="canonical" href="https://altarek-portfolio.vercel.app/projects/judicial-fees/">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Al-Tarek Attallah">
+    <meta property="og:url" content="https://altarek-portfolio.vercel.app/projects/judicial-fees/">
+    <meta property="og:title" content="Egyptian Judicial Fees — Court Fee Calculation Platform | Case Study">
+    <meta property="og:description" content="Case study for the Egyptian Judicial Fees platform: rule-based court fee calculation, RBAC, independent approvals, and SHA-256 hash-chained audit logs.">
+    <meta property="og:image" content="https://altarek-portfolio.vercel.app/src/assets/images/projects/judicial-fees.jpg">
+    <meta property="og:image:width" content="1376">
+    <meta property="og:image:height" content="768">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/svg+xml" href="../../src/assets/images/logo-pro.svg" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Prism Syntax Highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="../../src/assets/css/global.css">
+    <link rel="stylesheet" href="../../src/features/5-blog/blog.css">
+    <link rel="stylesheet" href="../../src/features/5-blog/article.css">
+    <link rel="stylesheet" href="../../src/assets/css/tailwind.css">
+</head>
+<body class="overflow-x-hidden bg-[#0a0f18]">
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Header -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 bg-gray-900/80 backdrop-blur-sm transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../../index.html" class="text-2xl font-bold text-white flex items-center gap-2 transform hover:scale-105 transition-transform">
+                <img src="../../src/assets/images/logo-pro.svg" alt="T. Attallah Logo" class="w-10 h-10 rounded-full object-cover border-2 border-blue-600">
+                <span>T. Attallah</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="../../index.html#home" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Home</a>
+                <a href="../../index.html#work" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Work</a>
+                <a href="../../index.html#about" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">About</a>
+                <a href="../../index.html#experience" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Experience</a>
+                <a href="../../blog/" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Blog</a>
+                <a href="../../index.html#contact" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Contact</a>
+                <a href="../../resume.pdf" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Resume</a>
+            </nav>
+            <button id="mobile-menu-btn" class="md:hidden text-white" title="Open mobile menu" aria-label="Open mobile menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 bg-gray-900/80 backdrop-blur-sm">  
+            <a href="../../index.html#home" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Home</a>
+            <a href="../../index.html#work" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Work</a>
+            <a href="../../index.html#about" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">About</a>
+            <a href="../../index.html#experience" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Experience</a>
+            <a href="../../blog/" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Blog</a>
+            <a href="../../index.html#contact" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Contact</a>
+            <a href="../../resume.pdf" target="_blank" rel="noopener noreferrer" class="block mt-2 text-center bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Resume</a>
+        </div>
+    </header>
+
+    <main class="pt-32 pb-20 container mx-auto px-6 min-h-screen max-w-4xl" data-project-slug="judicial-fees">
+        
+        <div class="mb-8">
+            <a href="../" class="text-gray-400 hover:text-blue-500 flex items-center gap-2 transition-colors w-fit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Back to Projects
+            </a>
+        </div>
+
+        <article>
+            <header class="mb-12 text-center md:text-left">
+                <span class="text-blue-500 font-semibold uppercase tracking-wider mb-4 block">Full Stack / GovTech</span>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">Egyptian Judicial Fees — Court Fee Calculation Platform</h1>
+                <p class="text-xl text-gray-400 leading-relaxed max-w-3xl">An Arabic RTL platform for court fee estimation and settlement review, with precise rule-based calculations and traceable legal references.</p>
+                <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 mt-8">
+                    <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded text-sm font-medium">React</span>
+                    <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded text-sm font-medium">TypeScript</span>
+                    <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded text-sm font-medium">Express</span>
+                    <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded text-sm font-medium">PostgreSQL</span>
+                    <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded text-sm font-medium">Prisma</span>
+                    <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded text-sm font-medium">RBAC</span>
+                </div>
+            </header>
+
+            <div class="w-full h-64 md:h-96 rounded-xl overflow-hidden mb-12 shadow-2xl relative group">
+                <img src="../../src/assets/images/projects/judicial-fees.jpg" alt="Judicial Fees assessments dashboard" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            </div>
+
+            <div class="article-content">
+
+                <h2>Overview</h2>
+                <p>The Egyptian Judicial Fees platform is an Arabic, right-to-left web application for estimating court fees and reviewing settlements. I worked on it during my Full Stack Development training at the Ministry of Justice (September – October 2026), contributing to the calculation engine, access control, auditing, and dashboards using React, TypeScript, Express, PostgreSQL, and Prisma.</p>
+
+                <h2>The Problem</h2>
+                <p>Court fees depend on legal rules that vary by case type, claim value, and exemptions. When these calculations are done manually or in spreadsheets, three problems appear:</p>
+                <ul>
+                    <li><strong>Inconsistency:</strong> two reviewers can reach different amounts for the same case.</li>
+                    <li><strong>Missing justification:</strong> a number on its own does not show which legal article it came from.</li>
+                    <li><strong>Weak accountability:</strong> it is hard to prove who changed a rule or approved an assessment, and when.</li>
+                </ul>
+                <p>The platform needed to make every fee reproducible, explainable, and auditable.</p>
+
+                <h2>The Solution</h2>
+                <p>The system turns the fee rules into structured, versioned data and runs every assessment through the same rule-based engine. Each calculated line is linked to the legal reference it is based on, so a reviewer can trace any amount back to its source.</p>
+                <ul>
+                    <li><strong>Precise rule-based calculations:</strong> fees are computed from approved rules, not typed in by hand, so the same inputs always give the same result.</li>
+                    <li><strong>Traceable legal references:</strong> every line in an assessment shows the article it applies.</li>
+                    <li><strong>Independent rule approvals:</strong> a change to a calculation rule is a draft until a different authorized user approves it, so no single person can change how fees are calculated.</li>
+                    <li><strong>Role-based access control:</strong> estimators, reviewers, and administrators each see and do only what their role permits.</li>
+                    <li><strong>Assessment and settlement dashboards:</strong> reviewers track pending assessments, approved fees, and settlements in one place.</li>
+                    <li><strong>Arabic RTL interface:</strong> the whole UI is built right-to-left for its Arabic-speaking users.</li>
+                </ul>
+
+                <h2>Tamper-Evident Audit Logs</h2>
+                <p>Because assessments have legal weight, the audit trail had to be trustworthy. Audit entries are <strong>hash-chained with SHA-256</strong>: each entry stores the hash of the previous one, so editing or deleting any past entry breaks the chain and is immediately detectable. A simplified version of the idea:</p>
+<pre><code class="language-javascript">// Simplified illustration of a hash-chained audit entry
+const crypto = require('crypto');
+
+function createAuditEntry(previousHash, event) {
+    const payload = JSON.stringify({ ...event, previousHash, at: new Date().toISOString() });
+    const hash = crypto.createHash('sha256').update(payload).digest('hex');
+    return { ...event, previousHash, hash };
+}
+
+// Verifying the chain: every entry must point to the hash before it
+function verifyChain(entries) {
+    return entries.every((entry, i) =&gt; i === 0 || entry.previousHash === entries[i - 1].hash);
+}</code></pre>
+
+                <h2>Engineering Challenges</h2>
+                <p><strong>Correctness over convenience.</strong> Money and legal rules leave no room for rounding surprises or edge cases that "usually" work. Calculation and permission logic is covered by automated tests, so a rule change or refactor cannot silently alter results or open access that should be closed.</p>
+                <p><strong>Separating rules from code.</strong> Keeping the fee rules as approved data (managed through PostgreSQL and Prisma) rather than hard-coded logic means the legal rules can evolve through the approval workflow without redeploying the application.</p>
+
+                <h2>Lessons Learned</h2>
+                <p>This project showed me how much trust matters in government software. Features like independent approvals and tamper-evident logs are not extras; they are what makes the numbers credible. It also reinforced the value of TypeScript and automated tests when the business rules are strict and the cost of a mistake is high.</p>
+
+
+            </div>
+        </article>
+
+    </main>
+
+    <footer class="py-6 text-center text-gray-500 border-t border-gray-800">
+        <p>Designed & Built by Al-Tarek Attallah</p>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button id="scrollToTopBtn" class="fixed bottom-8 right-8 w-12 h-12 bg-blue-600/80 backdrop-blur-sm text-white rounded-full hidden justify-center items-center shadow-lg hover:bg-blue-500 transition-all duration-300 translate-y-20 z-40">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" /></svg>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+
+    <script type="module">
+        import { initGeneralUI } from '../../src/shared/ui/ui.js';
+        import { initParticles } from '../../src/shared/ui/particles.js';
+        document.addEventListener('DOMContentLoaded', () => { 
+            initGeneralUI(); 
+            initParticles(); 
+        });
+    </script>
+</body>
+</html>

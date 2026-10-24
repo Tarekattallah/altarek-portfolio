@@ -13,9 +13,15 @@
     <meta property="og:description" content="How I structure a scalable Node.js backend using separation of concerns, modular architecture, controllers, services, repositories, and models.">
     <meta property="og:image" content="https://altarek-portfolio.vercel.app/src/assets/images/blog/scalable-nodejs-backend.jpg">
     
+    <link rel="alternate" type="application/rss+xml" title="Al-Tarek Attallah — Engineering Notes" href="https://altarek-portfolio.vercel.app/feed.xml">
+    <meta property="og:site_name" content="Al-Tarek Attallah">
+    <meta property="og:url" content="https://altarek-portfolio.vercel.app/blog/scalable-nodejs-backend/">
+    <meta property="og:image:width" content="1376">
+    <meta property="og:image:height" content="768">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Building a Scalable Node.js Backend", "description": "How I structure a scalable Node.js backend using separation of concerns, modular architecture, controllers, services, repositories, and models.", "image": "https://altarek-portfolio.vercel.app/src/assets/images/blog/scalable-nodejs-backend.jpg", "datePublished": "2025-10-15", "author": {"@type": "Person", "name": "Al-Tarek Attallah", "url": "https://altarek-portfolio.vercel.app/"}, "mainEntityOfPage": "https://altarek-portfolio.vercel.app/blog/scalable-nodejs-backend/", "keywords": "Node.js, Express, Architecture, Backend"}</script>
     <link rel="icon" type="image/svg+xml" href="../../src/assets/images/logo-pro.svg" />
     
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -26,6 +32,7 @@
     <link rel="stylesheet" href="../../src/assets/css/global.css">
     <link rel="stylesheet" href="../../src/features/5-blog/blog.css">
     <link rel="stylesheet" href="../../src/features/5-blog/article.css">
+    <link rel="stylesheet" href="../../src/assets/css/tailwind.css">
 </head>
 <body class="overflow-x-hidden bg-[#0a0f18]">
     <canvas id="particle-canvas"></canvas>
@@ -44,7 +51,7 @@
                 <a href="../../index.html#experience" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Experience</a>
                 <a href="../" class="nav-item text-blue-500 transition duration-300">Blog</a>
                 <a href="../../index.html#contact" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Contact</a>
-                <a href="https://drive.google.com/file/d/1lRveoubbaa6YM_A1E2ovwkocyHwtmBgE/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Resume</a>
+                <a href="../../resume.pdf" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Resume</a>
             </nav>
             <button id="mobile-menu-btn" class="md:hidden text-white" title="Open mobile menu" aria-label="Open mobile menu">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
@@ -57,7 +64,7 @@
             <a href="../../index.html#experience" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Experience</a>
             <a href="../" class="block py-2 text-blue-500 transition duration-300">Blog</a>
             <a href="../../index.html#contact" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Contact</a>
-            <a href="https://drive.google.com/file/d/1lRveoubbaa6YM_A1E2ovwkocyHwtmBgE/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="block mt-2 text-center bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Resume</a>
+            <a href="../../resume.pdf" target="_blank" rel="noopener noreferrer" class="block mt-2 text-center bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Resume</a>
         </div>
     </header>
 

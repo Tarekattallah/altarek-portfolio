@@ -35,7 +35,7 @@ The portfolio heavily emphasizes **Backend & Enterprise Engineering** while main
 ## 🛠️ Tech Stack
 
 - **Core:** HTML5, CSS3, Vanilla JavaScript (ES6 Modules)
-- **Styling:** Custom CSS, Tailwind CSS Utility Classes, Flexbox & CSS Grid
+- **Styling:** Custom CSS, Tailwind CSS (prebuilt, purged stylesheet), Flexbox & CSS Grid
 - **Libraries & Tools:** 
   - [Swiper.js](https://swiperjs.com/) for interactive sliders
   - [Prism.js](https://prismjs.com/) for syntax highlighting in blog posts
@@ -80,6 +80,19 @@ To run this project locally, you need a local web server (to avoid CORS issues w
    Open the local URL printed by the server (e.g. `http://localhost:3000`).
 
 **Live site:** [altarek-portfolio.vercel.app](https://altarek-portfolio.vercel.app)
+
+## 🔧 Build Scripts
+
+The site deploys as static files, so generated files are committed. Re-run these when content changes:
+
+- **Tailwind CSS** — after adding or changing Tailwind classes in any HTML or JS file:
+  ```bash
+  npx tailwindcss@3.4.17 -c tailwind.config.js -i src/assets/css/tailwind.input.css -o src/assets/css/tailwind.css --minify
+  ```
+- **Sitemap & RSS feed** — after adding a blog post or case study:
+  ```bash
+  node scripts/build-seo.mjs
+  ```
 
 ---
 <div align="center">

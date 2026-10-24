@@ -1,8 +1,69 @@
 import { blogPosts, getPostImage } from '../../data/blog-posts.js';
 
+// Adds a "Copy" button to every code block in the article
+function initCodeCopy() {
+    document.querySelectorAll('.article-content pre').forEach(pre => {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'code-block';
+        pre.parentNode.insertBefore(wrapper, pre);
+        wrapper.appendChild(pre);
+
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'code-copy-btn';
+        button.textContent = 'Copy';
+        button.setAttribute('aria-label', 'Copy code to clipboard');
+        wrapper.appendChild(button);
+
+        button.addEventListener('click', async () => {
+            const code = pre.innerText.trim();
+            try {
+                await navigator.clipboard.writeText(code);
+                button.textContent = 'Copied!';
+            } catch {
+                button.textContent = 'Press Ctrl+C';
+                const range = document.createRange();
+                range.selectNodeContents(pre);
+                const selection = window.getSelection();
+                selection.removeAllRanges();
+                selection.addRange(range);
+            }
+            setTimeout(() => { button.textContent = 'Copy'; }, 2000);
+        });
+    });
+}
+
+// Thin bar under the header showing how far the reader is through the article
+function initReadingProgress() {
+    const article = document.querySelector('article');
+    if (!article) return;
+
+    const bar = document.createElement('div');
+    bar.className = 'reading-progress';
+    bar.setAttribute('role', 'progressbar');
+    bar.setAttribute('aria-label', 'Reading progress');
+    document.body.appendChild(bar);
+
+    function update() {
+        const start = article.offsetTop;
+        const end = start + article.offsetHeight - window.innerHeight;
+        const progress = end > start ? (window.scrollY - start) / (end - start) : 1;
+        const percent = Math.round(Math.min(1, Math.max(0, progress)) * 100);
+        bar.style.width = percent + '%';
+        bar.setAttribute('aria-valuenow', String(percent));
+    }
+
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+}
+
 export function initArticlePage() {
     const mainEl = document.querySelector('main');
     if (!mainEl) return;
+
+    initCodeCopy();
+    initReadingProgress();
     
     const currentSlug = mainEl.getAttribute('data-article-slug');
     if (!currentSlug) return;
@@ -44,12 +105,17 @@ export function initArticlePage() {
         prevNextContainer.innerHTML = html;
     }
 
-    // Set up Related Articles (by tag intersection or category)
+    // Set up Related Articles: rank by shared tags and category, then fill with the rest
     const relatedContainer = document.getElementById('related-articles');
     if (relatedContainer) {
-        let related = blogPosts.filter(p => p.id !== currentPost.id && (p.category === currentPost.category || p.tags.some(t => currentPost.tags.includes(t))));
-        // Sort by number of common tags (optional, keeping it simple for now)
-        related = related.slice(0, 3); // Get top 3
+        const score = (post) => post.tags.filter(t => currentPost.tags.includes(t)).length * 2
+            + (post.category === currentPost.category ? 3 : 0);
+        const related = blogPosts
+            .filter(p => p.id !== currentPost.id)
+            .map((post, order) => ({ post, order, score: score(post) }))
+            .sort((a, b) => b.score - a.score || a.order - b.order)
+            .slice(0, 3)
+            .map(r => r.post);
 
         if (related.length > 0) {
             relatedContainer.innerHTML = related.map(post => `

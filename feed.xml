@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Al-Tarek Attallah — Engineering Notes</title>
+        <link>https://altarek-portfolio.vercel.app/blog/</link>
+        <description>Practical notes on backend engineering, architecture, databases, AI-assisted development, cloud, DevOps, and SRE.</description>
+        <language>en</language>
+        <lastBuildDate>Sat, 24 Oct 2026 18:08:38 GMT</lastBuildDate>
+        <atom:link href="https://altarek-portfolio.vercel.app/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+            <title>From Full Stack Development to DevOps and SRE</title>
+            <link>https://altarek-portfolio.vercel.app/blog/fullstack-to-devops-sre/</link>
+            <guid isPermaLink="true">https://altarek-portfolio.vercel.app/blog/fullstack-to-devops-sre/</guid>
+            <pubDate>Mon, 22 Dec 2025 00:00:00 GMT</pubDate>
+            <category>DevOps &amp; SRE</category>
+            <description>Why I am expanding beyond application development into cloud infrastructure, DevOps, reliability engineering, automation, and scalable systems.</description>
+        </item>
+        <item>
+            <title>Preparing for AWS Cloud Practitioner</title>
+            <link>https://altarek-portfolio.vercel.app/blog/preparing-aws-cloud-practitioner/</link>
+            <guid isPermaLink="true">https://altarek-portfolio.vercel.app/blog/preparing-aws-cloud-practitioner/</guid>
+            <pubDate>Mon, 15 Dec 2025 00:00:00 GMT</pubDate>
+            <category>AWS &amp; Cloud</category>
+            <description>My learning journey through AWS Cloud fundamentals and the key concepts behind cloud computing, security, storage, compute, networking, monitoring, and cost optimization.</description>
+        </item>
+        <item>
+            <title>My Journey from Science to Software Engineering</title>
+            <link>https://altarek-portfolio.vercel.app/blog/journey-science-to-software-engineering/</link>
+            <guid isPermaLink="true">https://altarek-portfolio.vercel.app/blog/journey-science-to-software-engineering/</guid>
+            <pubDate>Mon, 08 Dec 2025 00:00:00 GMT</pubDate>
+            <category>Career &amp; Engineering</category>
+            <description>My transition from a scientific and pharmaceutical background into software development, and how analytical thinking, problem solving, and attention to detail became valuable skills in engineering.</description>
+        </item>
+        <item>
+            <title>AI-Assisted Software Development</title>
+            <link>https://altarek-portfolio.vercel.app/blog/ai-assisted-software-development/</link>
+            <guid isPermaLink="true">https://altarek-portfolio.vercel.app/blog/ai-assisted-software-development/</guid>
+            <pubDate>Tue, 02 Dec 2025 00:00:00 GMT</pubDate>
+            <category>AI &amp; Software Development</category>
+            <description>How AI-assisted development can improve productivity, debugging, documentation, code exploration, and software engineering workflows while keeping developers responsible for architecture and technical decisions.</description>
+        </item>
+        <item>
+            <title>MongoDB &amp; Mongoose for Enterprise Applications</title>
+            <link>https://altarek-portfolio.vercel.app/blog/mongodb-mongoose-enterprise/</link>
+            <guid isPermaLink="true">https://altarek-portfolio.vercel.app/blog/mongodb-mongoose-enterprise/</guid>
+            <pubDate>Tue, 25 Nov 2025 00:00:00 GMT</pubDate>
+            <category>Databases</category>
+            <description>How schema design, validation, relationships, indexes, public identifiers, and soft deletion can be handled when building production-oriented applications with MongoDB and Mongoose.</description>
+        </item>
+        <item>
+            <title>Designing RESTful APIs the Right Way</title>
+            <link>https://altarek-portfolio.vercel.app/blog/designing-restful-apis-right-way/</link>
+            <guid isPermaLink="true">https://altarek-portfolio.vercel.app/blog/designing-restful-apis-right-way/</guid>
+            <pubDate>Tue, 18 Nov 2025 00:00:00 GMT</pubDate>
+            <category>Backend Engineering</category>
+            <description>Practical principles I follow when designing clean, consistent, and maintainable REST APIs.</description>
+        </item>
+        <item>
+            <title>What I Learned Building MADMS</title>
+            <link>https://altarek-portfolio.vercel.app/blog/what-i-learned-building-madms/</link>
+            <guid isPermaLink="true">https://altarek-portfolio.vercel.app/blog/what-i-learned-building-madms/</guid>
+            <pubDate>Wed, 12 Nov 2025 00:00:00 GMT</pubDate>
+            <category>Project Case Studies</category>
+            <description>Lessons learned while designing and building a modular enterprise backend, including authentication, RBAC, validation, database design, and business modules.</description>
+        </item>
+        <item>
+            <title>From CRUD APIs to Business Logic</title>
+            <link>https://altarek-portfolio.vercel.app/blog/crud-to-business-logic/</link>
+            <guid isPermaLink="true">https://altarek-portfolio.vercel.app/blog/crud-to-business-logic/</guid>
+            <pubDate>Wed, 05 Nov 2025 00:00:00 GMT</pubDate>
+            <category>Backend Engineering</category>
+            <description>Why real-world enterprise applications require more than basic CRUD operations, and how business rules can be organized into reliable backend services and engines.</description>
+        </item>
+        <item>
+            <title>Understanding RBAC in Enterprise Applications</title>
+            <link>https://altarek-portfolio.vercel.app/blog/rbac-enterprise-applications/</link>
+            <guid isPermaLink="true">https://altarek-portfolio.vercel.app/blog/rbac-enterprise-applications/</guid>
+            <pubDate>Tue, 28 Oct 2025 00:00:00 GMT</pubDate>
+            <category>Software Architecture</category>
+            <description>A practical overview of Role-Based Access Control and how users, roles, permissions, and authorization work together in enterprise applications.</description>
+        </item>
+        <item>
+            <title>Building a Scalable Node.js Backend</title>
+            <link>https://altarek-portfolio.vercel.app/blog/scalable-nodejs-backend/</link>
+            <guid isPermaLink="true">https://altarek-portfolio.vercel.app/blog/scalable-nodejs-backend/</guid>
+            <pubDate>Wed, 15 Oct 2025 00:00:00 GMT</pubDate>
+            <category>Backend Engineering</category>
+            <description>How I structure a scalable Node.js backend using separation of concerns, modular architecture, controllers, services, repositories, and models.</description>
+        </item>
+    </channel>
+</rss>
