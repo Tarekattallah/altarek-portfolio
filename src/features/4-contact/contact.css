@@ -14,7 +14,15 @@
     cursor: pointer;
 }
 
-.contact-card-container:hover .contact-card {
+/* Flip on hover (mouse only), on tap/click, and while anything inside has keyboard focus */
+@media (hover: hover) {
+    .contact-card-container:hover .contact-card {
+        transform: rotateY(180deg);
+    }
+}
+
+.contact-card-container:focus-within .contact-card,
+.contact-card.is-flipped {
     transform: rotateY(180deg);
 }
 
@@ -41,6 +49,12 @@
     text-align: center;
     border: 1px solid #3b82f6;
     box-shadow: 0 0 30px rgba(59, 130, 246, 0.2);
+    cursor: pointer;
+}
+
+.contact-card-front:focus-visible {
+    outline: 2px solid #3b82f6;
+    outline-offset: 4px;
 }
 
 .contact-icon {
@@ -157,7 +171,12 @@ textarea.form-input:not(:placeholder-shown) ~ .form-label {
     cursor: pointer;
 }
 
-.submit-btn:hover {
+.submit-btn:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+.submit-btn:hover:not(:disabled) {
     background: #23252a;
     color: white;
     box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);

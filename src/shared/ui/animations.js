@@ -1,4 +1,8 @@
+import { prefersReducedMotion } from './motion.js';
+
 export function initAnimations() {
+    // Content stays visible as-is; ScrollReveal only hides elements it is asked to reveal
+    if (prefersReducedMotion()) return;
     if (typeof ScrollReveal === 'undefined') {
         console.error("ScrollReveal is not loaded.");
         return;

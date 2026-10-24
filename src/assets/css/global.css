@@ -64,6 +64,17 @@ body {
 #project-modal { transition: opacity 0.3s ease-in-out; }
 #project-modal-content { transition: transform 0.3s ease-in-out; }
 
+/* Respect the visitor's reduced-motion setting */
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto !important; }
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-delay: 0s !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: #0a0f18; }

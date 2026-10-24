@@ -181,17 +181,19 @@
                 
                 <div class="contact-card-container">
                     <div class="contact-card">
-                        <div class="contact-card-front">
-                            <div class="contact-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                            </div>
+                        <button type="button" id="contact-card-front" class="contact-card-front" aria-controls="contact-form" aria-label="Open the contact form">
+                            <span class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </span>
                             <h3>Let's Talk</h3>
-                            <p>Click here to send me a message</p>
-                        </div>
+                            <p>Tap or click to send me a message</p>
+                        </button>
                         <div class="contact-card-back">
 <form id="contact-form" action="https://formsubmit.co/tarekattallah00@gmail.com" method="POST" class="p-6 sm:p-8">
                                 <input type="hidden" name="_captcha" value="false">
                                 <input type="hidden" name="_subject" value="New Message from Portfolio!">
+                                <!-- Honeypot: hidden from people, filled in by spam bots -->
+                                <input type="text" name="_honey" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
                                 <div class="form-group">
                                     <input type="text" id="name" name="name" class="form-input peer" placeholder=" " required>
                                     <label for="name" class="form-label">Your Name</label>

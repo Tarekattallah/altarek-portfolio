@@ -1,6 +1,9 @@
+import { prefersReducedMotion } from './motion.js';
+
 export function initParticles() {
     const canvas = document.getElementById('particle-canvas');
     if (!canvas) return;
+    const reduceMotion = prefersReducedMotion();
 
     const ctx = canvas.getContext('2d');
     canvas.width = window.innerWidth;
@@ -76,13 +79,24 @@ export function initParticles() {
         }
     }
 
+    // Reduced motion: draw a still starfield once instead of animating it
+    function drawStatic() {
+        ctx.clearRect(0, 0, innerWidth, innerHeight);
+        particlesArray.forEach(p => p.draw());
+    }
+
     createParticles();
-    animateParticles();
+    if (reduceMotion) {
+        drawStatic();
+    } else {
+        animateParticles();
+    }
 
     window.addEventListener('resize', () => {
         canvas.width = innerWidth;
         canvas.height = innerHeight;
         createParticles();
+        if (reduceMotion) drawStatic();
     });
 
     // Clear mouse position on mouse out

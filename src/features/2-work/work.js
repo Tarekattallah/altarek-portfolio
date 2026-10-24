@@ -1,4 +1,5 @@
 import { getFeaturedProjects, getProjectById } from '../../data/projects.js';
+import { prefersReducedMotion } from '../../shared/ui/motion.js';
 
 const modal = document.getElementById('project-modal');
 const modalContent = document.getElementById('project-modal-content');
@@ -131,7 +132,7 @@ export function initWorkFeature() {
         slidesPerView: 1,
         spaceBetween: 30,
         breakpoints: { 768: { slidesPerView: 2, spaceBetween: 30 }, },
-        autoplay: { delay: 3000, disableOnInteraction: false, },
+        autoplay: prefersReducedMotion() ? false : { delay: 3000, disableOnInteraction: false, },
         grabCursor: true,
     });
 

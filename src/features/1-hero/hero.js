@@ -1,8 +1,14 @@
+import { prefersReducedMotion } from '../../shared/ui/motion.js';
+
 function typeEffect() {
     const words = [" HTML, CSS, JavaScript, React, Node.js, and scalable backend systems.", "Web Apps.", "modern web development — from frontend to backend.", "Great UI/UX."];
     let wordIndex = 0, charIndex = 0, isDeleting = false;
     const typingElement = document.getElementById("typing-text");
     if (!typingElement) return;
+    if (prefersReducedMotion()) {
+        typingElement.textContent = 'Web Apps.';
+        return;
+    }
 
     function type() {
         const currentWord = words[wordIndex];
