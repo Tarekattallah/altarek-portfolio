@@ -1,4 +1,4 @@
-import { blogPosts } from '../../data/blog-posts.js';
+import { blogPosts, getPostImage } from '../../data/blog-posts.js';
 
 export function initBlogPage() {
     const grid = document.getElementById('blog-grid');
@@ -84,7 +84,7 @@ export function initBlogPage() {
                     <div class="relative rounded-2xl overflow-hidden bg-gray-800 group border border-gray-700 hover:border-blue-500 transition-colors">
                         <div class="md:flex">
                             <div class="md:w-1/2 h-64 md:h-auto relative overflow-hidden">
-                                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style="background-image: url('${displayFeatured.image}');"></div>
+                                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style="background-image: url('${getPostImage(displayFeatured, 1)}');"></div>
                                 <div class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Featured</div>
                             </div>
                             <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
@@ -121,7 +121,7 @@ export function initBlogPage() {
             if (emptyState) emptyState.classList.add('hidden');
             grid.innerHTML = displayGrid.map(post => `
                 <div class="blog-card">
-                    <div class="blog-card__image" style="background-image: url('${post.image}')">
+                    <div class="blog-card__image" style="background-image: url('${getPostImage(post, 1)}')">
                         <span class="blog-card__date">${post.date}</span>
                     </div>
                     <div class="blog-card__content">

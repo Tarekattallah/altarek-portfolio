@@ -183,5 +183,8 @@ export function initProjectsPage() {
         modal.addEventListener('click', (e) => {
             if (e.target === modal) closeModal();
         });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !modal.classList.contains('opacity-0')) closeModal();
+        });
     }
 }

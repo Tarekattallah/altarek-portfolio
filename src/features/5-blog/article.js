@@ -1,4 +1,4 @@
-import { blogPosts } from '../../data/blog-posts.js';
+import { blogPosts, getPostImage } from '../../data/blog-posts.js';
 
 export function initArticlePage() {
     const mainEl = document.querySelector('main');
@@ -54,7 +54,7 @@ export function initArticlePage() {
         if (related.length > 0) {
             relatedContainer.innerHTML = related.map(post => `
                 <div class="blog-card">
-                    <div class="blog-card__image h-40" style="background-image: url('${post.image}')"></div>
+                    <div class="blog-card__image h-40" style="background-image: url('${getPostImage(post, 2)}')"></div>
                     <div class="blog-card__content p-6">
                         <span class="text-blue-500 text-xs font-semibold uppercase tracking-wider mb-2 block">${post.category}</span>
                         <h4 class="text-lg font-bold text-white mb-2 leading-tight">${post.title}</h4>

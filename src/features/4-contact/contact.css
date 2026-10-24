@@ -18,11 +18,6 @@
     transform: rotateY(180deg);
 }
 
-:lang(ar) .contact-card-container:hover .contact-card {
-    transform: rotateY(-180deg);
-}
-
-
 .contact-card-front,
 .contact-card-back {
     position: absolute;
@@ -66,10 +61,6 @@
 .contact-card-back {
     background-color: #161b22;
     transform: rotateY(180deg);
-}
-
-:lang(ar) .contact-card-back {
-    transform: rotateY(-180deg);
 }
 
 /* === 🎨 بداية الـ CSS الجديد للفورم === */
@@ -146,22 +137,6 @@ textarea.form-input:focus ~ .form-label,
 textarea.form-input:not(:placeholder-shown) ~ .form-label {
     background-color: transparent;
     padding: 0;
-}
-
-/* RTL Support */
-:lang(ar) .form-label {
-    left: auto;
-    right: 0;
-}
-:lang(ar) .focus-line {
-    left: auto;
-    right: 50%;
-    transform: translateX(50%);
-}
-:lang(ar) textarea.form-input:focus ~ .form-label,
-:lang(ar) textarea.form-input:not(:placeholder-shown) ~ .form-label {
-    left: auto;
-    right: 0;
 }
 
 /* === 🎨 نهاية الـ CSS الجديد للفورم === */

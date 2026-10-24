@@ -66,8 +66,8 @@ To run this project locally, you need a local web server (to avoid CORS issues w
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/modola0100/-Portfolio.git
-   cd -Portfolio
+   git clone https://github.com/Tarekattallah/altarek-portfolio.git
+   cd altarek-portfolio
    ```
 
 2. **Serve the project**
@@ -77,7 +77,9 @@ To run this project locally, you need a local web server (to avoid CORS issues w
    ```
 
 3. **View in browser**
-   Open `https://altarek-portfolio.vercel.app`
+   Open the local URL printed by the server (e.g. `http://localhost:3000`).
+
+**Live site:** [altarek-portfolio.vercel.app](https://altarek-portfolio.vercel.app)
 
 ---
 <div align="center">

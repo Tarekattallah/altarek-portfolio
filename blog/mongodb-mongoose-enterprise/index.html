@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MongoDB & Mongoose for Enterprise Applications - Al-Tarek Attallah</title>
     <meta name="description" content="How schema design, validation, relationships, indexes, public identifiers, and soft deletion can be handled when building production-oriented applications with MongoDB and Mongoose.">
-    <link rel="canonical" href="https://tarekattallah.github.io/-Portfolio/blog/mongodb-mongoose-enterprise/">
+    <link rel="canonical" href="https://altarek-portfolio.vercel.app/blog/mongodb-mongoose-enterprise/">
     <meta property="og:type" content="article">
     <meta property="og:title" content="MongoDB & Mongoose for Enterprise Applications">
     <meta property="og:description" content="How schema design, validation, relationships, indexes, public identifiers, and soft deletion can be handled when building production-oriented applications with MongoDB and Mongoose.">
-    <meta property="og:image" content="https://picsum.photos/seed/mongodb/800/500">
+    <meta property="og:image" content="https://altarek-portfolio.vercel.app/src/assets/images/blog/mongodb-mongoose-enterprise.jpg">
     <link rel="icon" type="image/svg+xml" href="../../src/assets/images/logo-pro.svg" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,7 +32,10 @@
                 <a href="../../index.html#home" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Home</a>
                 <a href="../../index.html#work" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Work</a>
                 <a href="../../index.html#about" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">About</a>
+                <a href="../../index.html#experience" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Experience</a>
                 <a href="../" class="nav-item text-blue-500 transition duration-300">Blog</a>
+                <a href="../../index.html#contact" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Contact</a>
+                <a href="https://drive.google.com/file/d/1lRveoubbaa6YM_A1E2ovwkocyHwtmBgE/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Resume</a>
             </nav>
             <button id="mobile-menu-btn" class="md:hidden text-white" title="Open mobile menu" aria-label="Open mobile menu">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
@@ -42,7 +45,10 @@
             <a href="../../index.html#home" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Home</a>
             <a href="../../index.html#work" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Work</a>
             <a href="../../index.html#about" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">About</a>
+            <a href="../../index.html#experience" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Experience</a>
             <a href="../" class="block py-2 text-blue-500 transition duration-300">Blog</a>
+            <a href="../../index.html#contact" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Contact</a>
+            <a href="https://drive.google.com/file/d/1lRveoubbaa6YM_A1E2ovwkocyHwtmBgE/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="block mt-2 text-center bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Resume</a>
         </div>
     </header>
 
@@ -61,15 +67,98 @@
                 <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 text-sm text-gray-500 mb-8 border-y border-gray-800 py-4">
                     <span class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> Nov 25, 2025</span>
                     <span>•</span>
-                    <span class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 7 min read</span>
+                    <span class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 4 min read</span>
                 </div>
                 <div class="flex flex-wrap gap-2 justify-center md:justify-start mb-8">
                     <span class="bg-gray-800 text-gray-400 text-xs px-3 py-1.5 rounded-full">MongoDB</span><span class="bg-gray-800 text-gray-400 text-xs px-3 py-1.5 rounded-full">Mongoose</span><span class="bg-gray-800 text-gray-400 text-xs px-3 py-1.5 rounded-full">Database</span>
                 </div>
-                <img src="https://picsum.photos/seed/mongodb/800/500" alt="MongoDB & Mongoose" class="w-full rounded-2xl shadow-2xl mb-12 border border-gray-800">
+                <img src="../../src/assets/images/blog/mongodb-mongoose-enterprise.jpg" alt="MongoDB & Mongoose" class="w-full rounded-2xl shadow-2xl mb-12 border border-gray-800">
             </header>
             <div class="article-content">
-                <p><em>[Placeholder content: The full technical guide on MongoDB enterprise practices will be published here soon.]</em></p>
+                <p>MongoDB is often described as "schemaless", which is true at the database level and dangerous at the application level. Enterprise data still has rules: required fields, unique values, relationships, and history that must not disappear. Mongoose gives us the tools to enforce those rules in Node.js. Here is how I use it when building production-oriented applications.</p>
+
+                <h2>Start with a Real Schema</h2>
+                <p>A good schema is the first line of defense. I declare types, required fields, allowed values, and formatting rules directly in the model:</p>
+                <pre><code class="language-javascript">const studentSchema = new mongoose.Schema({
+    publicId:   { type: String, required: true, unique: true, immutable: true },
+    fullName:   { type: String, required: true, trim: true, maxlength: 120 },
+    email:      { type: String, required: true, lowercase: true, trim: true },
+    status:     { type: String, enum: ['active', 'suspended', 'graduated'], default: 'active' },
+    department: { type: mongoose.Schema.Types.ObjectId, ref: 'Department', required: true },
+    isDeleted:  { type: Boolean, default: false, index: true },
+    deletedAt:  { type: Date, default: null },
+}, { timestamps: true });</code></pre>
+                <p><code>timestamps: true</code> adds <code>createdAt</code> and <code>updatedAt</code> automatically, and <code>immutable</code> prevents a field from ever being changed after creation.</p>
+                <p>Schema validation is not a replacement for request validation (I still validate input with Joi at the API boundary), but it guarantees that nothing invalid reaches the database, even from scripts or background jobs.</p>
+
+                <h2>Embed or Reference?</h2>
+                <p>This is the most important modeling decision in MongoDB. My rule of thumb:</p>
+                <ul>
+                    <li><strong>Embed</strong> data that belongs to the parent, is always read with it, and stays small. An address inside a user document is a good example.</li>
+                    <li><strong>Reference</strong> data that is shared, changes independently, or can grow without limit. Departments, attendance records, and complaints are references, because attendance alone can grow by thousands of documents per month.</li>
+                </ul>
+                <p>Unbounded arrays inside a document are a common trap. MongoDB documents have a 16&nbsp;MB limit, and large arrays make every read and write slower long before you reach it.</p>
+
+                <h2>Public Identifiers</h2>
+                <p>MongoDB's <code>_id</code> is an internal detail. I expose a separate <code>publicId</code> in URLs and API responses instead:</p>
+                <pre><code class="language-javascript">const { nanoid } = require('nanoid');
+
+studentSchema.pre('validate', function (next) {
+    if (!this.publicId) this.publicId = `STU-${nanoid(10)}`;
+    next();
+});</code></pre>
+                <p>This keeps internal structure hidden, gives IDs a readable prefix that helps when debugging, and means the storage layer could change without breaking client URLs.</p>
+
+                <h2>Soft Deletion</h2>
+                <p>In enterprise systems, deleting data is rarely acceptable. History matters for audits and reports. Instead of removing documents, I mark them as deleted and filter them out automatically with query middleware:</p>
+                <pre><code class="language-javascript">studentSchema.pre(/^find/, function (next) {
+    if (!this.getOptions().withDeleted) {
+        this.where({ isDeleted: false });
+    }
+    next();
+});
+
+studentSchema.methods.softDelete = function () {
+    this.isDeleted = true;
+    this.deletedAt = new Date();
+    return this.save();
+};</code></pre>
+                <p>Every <code>find</code> query now excludes deleted records by default, and an admin report can still opt in with <code>{ withDeleted: true }</code>.</p>
+
+                <h2>Indexes Are Not Optional</h2>
+                <p>Without indexes, MongoDB scans every document for every query. I add indexes based on how the data is actually queried:</p>
+                <pre><code class="language-javascript">// Most lists filter by department and status, newest first
+studentSchema.index({ department: 1, status: 1, createdAt: -1 });
+
+// Email must be unique, but only among records that are not deleted
+studentSchema.index(
+    { email: 1 },
+    { unique: true, partialFilterExpression: { isDeleted: false } }
+);</code></pre>
+                <p>The partial unique index is a nice detail: a deleted student's email does not block a new registration with the same address. I use <code>explain()</code> on slow queries to confirm that an index is actually used.</p>
+
+                <h2>Read Efficiently</h2>
+                <ul>
+                    <li><strong><code>.lean()</code></strong> returns plain JavaScript objects instead of full Mongoose documents. For read-only list endpoints, this is noticeably faster.</li>
+                    <li><strong><code>.select()</code></strong> fetches only the fields you need, and lets you exclude sensitive ones like password hashes.</li>
+                    <li><strong><code>.populate()</code></strong> is convenient but costs extra queries. Use it deliberately, and only for the fields you display.</li>
+                </ul>
+
+                <h2>Transactions for Multi-Document Changes</h2>
+                <p>When one business action writes several documents, partial failure leaves the data inconsistent. MongoDB supports multi-document transactions on replica sets:</p>
+                <pre><code class="language-javascript">const session = await mongoose.startSession();
+await session.withTransaction(async () =&gt; {
+    await Complaint.updateOne({ publicId }, { status: 'resolved' }, { session });
+    await AuditLog.create([{ action: 'complaint.resolved', publicId, by: userId }], { session });
+});
+session.endSession();</code></pre>
+                <p>Transactions have a cost, so I use them only where consistency across documents is genuinely required.</p>
+
+                <h2>Keep Queries in Repositories</h2>
+                <p>Finally, I keep all Mongoose calls inside repository modules. Services ask for <code>studentRepository.findActiveByDepartment(id)</code> instead of building queries themselves. Soft-delete filters, default sorting, and pagination live in one place, and the business logic stays readable.</p>
+
+                <h2>Summary</h2>
+                <p>MongoDB's flexibility is a strength only when it is paired with discipline. Strong schemas, thoughtful embedding, public IDs, soft deletion, the right indexes, and transactions where needed turn MongoDB and Mongoose into a solid foundation for enterprise applications.</p>
             </div>
         </article>
         <div class="mt-16 pt-8 border-t border-gray-800 flex justify-between gap-4" id="prev-next-nav"></div>

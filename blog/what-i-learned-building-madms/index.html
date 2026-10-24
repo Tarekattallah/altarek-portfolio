@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What I Learned Building MADMS - Al-Tarek Attallah</title>
     <meta name="description" content="Lessons learned while designing and building a modular enterprise backend, including authentication, RBAC, validation, database design, and business modules.">
-    <link rel="canonical" href="https://tarekattallah.github.io/-Portfolio/blog/what-i-learned-building-madms/">
+    <link rel="canonical" href="https://altarek-portfolio.vercel.app/blog/what-i-learned-building-madms/">
     <meta property="og:type" content="article">
     <meta property="og:title" content="What I Learned Building MADMS">
     <meta property="og:description" content="Lessons learned while designing and building a modular enterprise backend, including authentication, RBAC, validation, database design, and business modules.">
-    <meta property="og:image" content="https://picsum.photos/seed/madms/800/500">
+    <meta property="og:image" content="https://altarek-portfolio.vercel.app/src/assets/images/blog/what-i-learned-building-madms.jpg">
     <link rel="icon" type="image/svg+xml" href="../../src/assets/images/logo-pro.svg" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,7 +32,10 @@
                 <a href="../../index.html#home" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Home</a>
                 <a href="../../index.html#work" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Work</a>
                 <a href="../../index.html#about" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">About</a>
+                <a href="../../index.html#experience" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Experience</a>
                 <a href="../" class="nav-item text-blue-500 transition duration-300">Blog</a>
+                <a href="../../index.html#contact" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Contact</a>
+                <a href="https://drive.google.com/file/d/1lRveoubbaa6YM_A1E2ovwkocyHwtmBgE/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Resume</a>
             </nav>
             <button id="mobile-menu-btn" class="md:hidden text-white" title="Open mobile menu" aria-label="Open mobile menu">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
@@ -42,7 +45,10 @@
             <a href="../../index.html#home" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Home</a>
             <a href="../../index.html#work" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Work</a>
             <a href="../../index.html#about" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">About</a>
+            <a href="../../index.html#experience" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Experience</a>
             <a href="../" class="block py-2 text-blue-500 transition duration-300">Blog</a>
+            <a href="../../index.html#contact" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Contact</a>
+            <a href="https://drive.google.com/file/d/1lRveoubbaa6YM_A1E2ovwkocyHwtmBgE/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="block mt-2 text-center bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Resume</a>
         </div>
     </header>
 
@@ -61,15 +67,84 @@
                 <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 text-sm text-gray-500 mb-8 border-y border-gray-800 py-4">
                     <span class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> Nov 12, 2025</span>
                     <span>•</span>
-                    <span class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 8 min read</span>
+                    <span class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 4 min read</span>
                 </div>
                 <div class="flex flex-wrap gap-2 justify-center md:justify-start mb-8">
                     <span class="bg-gray-800 text-gray-400 text-xs px-3 py-1.5 rounded-full">MADMS</span><span class="bg-gray-800 text-gray-400 text-xs px-3 py-1.5 rounded-full">Node.js</span><span class="bg-gray-800 text-gray-400 text-xs px-3 py-1.5 rounded-full">MongoDB</span>
                 </div>
-                <img src="https://picsum.photos/seed/madms/800/500" alt="Building MADMS" class="w-full rounded-2xl shadow-2xl mb-12 border border-gray-800">
+                <img src="../../src/assets/images/blog/what-i-learned-building-madms.jpg" alt="Building MADMS" class="w-full rounded-2xl shadow-2xl mb-12 border border-gray-800">
             </header>
             <div class="article-content">
-                <p><em>[Placeholder content: Full case study of the MADMS project will be published here soon.]</em></p>
+                <p>MADMS is a modular enterprise management system I built on Node.js, Express, and MongoDB. It covers student management, attendance, complaint handling, phone requests, and shared master data, all protected by role-based access control. The <a href="../../projects/madms/" class="text-blue-400 hover:text-blue-300 underline">case study</a> describes <em>what</em> the system does. This article is about what building it taught me.</p>
+
+                <h2>1. Organize by Feature, Not by File Type</h2>
+                <p>My earlier projects had the classic layout: one <code>controllers/</code> folder, one <code>models/</code> folder, one <code>routes/</code> folder. With five modules, each of those folders filled up with unrelated files, and working on a single feature meant jumping across the whole tree.</p>
+                <p>In MADMS, each business module owns its own folder:</p>
+                <pre><code class="language-plaintext">src/modules/
+├── students/
+│   ├── student.routes.js
+│   ├── student.controller.js
+│   ├── student.service.js
+│   ├── student.repository.js
+│   ├── student.model.js
+│   └── student.validation.js
+├── attendance/
+├── complaints/
+├── phone-requests/
+└── master-data/</code></pre>
+                <p>Everything about students lives together. Adding a new module means adding a new folder, and deleting one is just as clean. This single decision made the project far easier to navigate.</p>
+
+                <h2>2. Layers Only Help If You Respect Them</h2>
+                <p>The system follows <strong>Router → Controller → Service → Repository → Model</strong>. The value of that structure comes from discipline: controllers never query the database, services never touch <code>req</code> or <code>res</code>, and repositories never contain business rules.</p>
+                <p>The first time I was tempted to "just add a quick query" inside a controller, I realized that every shortcut like that would erode the structure. Keeping the boundaries strict meant I could later change how data was fetched without touching a single business rule.</p>
+
+                <h2>3. Validate at the Edge</h2>
+                <p>Every request body is validated with Joi before it reaches the controller. A small reusable middleware keeps it tidy:</p>
+                <pre><code class="language-javascript">const validate = (schema) =&gt; (req, res, next) =&gt; {
+    const { error, value } = schema.validate(req.body, { abortEarly: false, stripUnknown: true });
+    if (error) {
+        return next(new ValidationError(error.details.map(d =&gt; d.message)));
+    }
+    req.body = value;
+    next();
+};</code></pre>
+                <p><code>stripUnknown</code> turned out to be important: it silently drops fields the client should not be setting, such as <code>role</code> or <code>deletedAt</code>, which closes a whole class of mass-assignment bugs.</p>
+
+                <h2>4. Design RBAC Before You Need It</h2>
+                <p>I planned roles and permissions at the start rather than retrofitting them. Each route declares the permission it needs (for example <code>complaints:resolve</code>), and roles are just collections of those permissions. When new roles were needed later, they were configuration changes, not code changes. I wrote more about this approach in <a href="../rbac-enterprise-applications/" class="text-blue-400 hover:text-blue-300 underline">Understanding RBAC in Enterprise Applications</a>.</p>
+
+                <h2>5. Soft Delete and Public IDs Belong in the First Schema</h2>
+                <p>Two database decisions saved me from painful refactors:</p>
+                <ul>
+                    <li><strong>Soft delete.</strong> Records get a <code>deletedAt</code> timestamp instead of being removed. Attendance history and complaint records stay intact for auditing, and an accidental delete can be undone.</li>
+                    <li><strong>Public identifiers.</strong> The API exposes a separate <code>publicId</code> instead of MongoDB's internal <code>_id</code>. Internal IDs never leak, and the database could change without breaking any client URLs.</li>
+                </ul>
+                <p>Both are easy to add on day one and very hard to add once data and clients already exist.</p>
+
+                <h2>6. One Error Handler, One Response Shape</h2>
+                <p>Early on, different endpoints returned errors in different shapes. The frontend had to guess. I replaced all of that with custom error classes and a single error-handling middleware, so every error looks the same:</p>
+                <pre><code class="language-javascript">{
+    "success": false,
+    "error": {
+        "code": "VALIDATION_ERROR",
+        "message": "Invalid request data",
+        "details": ["\"phone\" must be a valid number"]
+    }
+}</code></pre>
+                <p>Successful responses follow a matching envelope. Consistency like this is invisible when it works and painful when it is missing.</p>
+
+                <h2>7. Lists Need Pagination From the Start</h2>
+                <p>A list endpoint that returns everything works fine with fifty test records and breaks with real data. Every list in MADMS supports <code>page</code>, <code>limit</code>, sorting, and filtering, implemented once in a shared helper and reused by each repository.</p>
+
+                <h2>What I Would Do Differently</h2>
+                <ul>
+                    <li><strong>Write tests earlier.</strong> The layered structure made services easy to test, but I added tests later than I should have. Testing business rules as they are written is much cheaper.</li>
+                    <li><strong>Document the API as I go.</strong> An OpenAPI spec maintained alongside the routes would have made frontend integration smoother.</li>
+                    <li><strong>Consider TypeScript.</strong> As the number of modules grew, types would have caught a number of small mistakes before runtime.</li>
+                </ul>
+
+                <h2>Final Thoughts</h2>
+                <p>The biggest lesson from MADMS is that structure is a feature. None of these decisions are complicated on their own, but together they made a growing system feel predictable. When I open any module, I know exactly where everything is, and that is what makes a codebase maintainable.</p>
             </div>
         </article>
         <div class="mt-16 pt-8 border-t border-gray-800 flex justify-between gap-4" id="prev-next-nav"></div>

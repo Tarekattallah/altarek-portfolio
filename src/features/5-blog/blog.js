@@ -1,4 +1,4 @@
-import { blogPosts, getRelativePath } from '../../data/blog-posts.js';
+import { blogPosts, getPostImage } from '../../data/blog-posts.js';
 
 export function initBlogFeature() {
     const blogWrapper = document.getElementById('blog-wrapper');
@@ -12,7 +12,7 @@ export function initBlogFeature() {
     recentPosts.forEach(post => {
         const blogCard = `
             <div class="blog-card reveal-up">
-                <div class="blog-card__image" style="background-image: url('${post.image}')">
+                <div class="blog-card__image" style="background-image: url('${getPostImage(post, 0)}')">
                     <span class="blog-card__date">${post.date}</span>
                 </div>
                 <div class="blog-card__content">

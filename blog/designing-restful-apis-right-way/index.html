@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Designing RESTful APIs the Right Way - Al-Tarek Attallah</title>
     <meta name="description" content="Practical principles I follow when designing clean, consistent, and maintainable REST APIs.">
-    <link rel="canonical" href="https://tarekattallah.github.io/-Portfolio/blog/designing-restful-apis-right-way/">
+    <link rel="canonical" href="https://altarek-portfolio.vercel.app/blog/designing-restful-apis-right-way/">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Designing RESTful APIs the Right Way">
     <meta property="og:description" content="Practical principles I follow when designing clean, consistent, and maintainable REST APIs.">
-    <meta property="og:image" content="https://picsum.photos/seed/rest/800/500">
+    <meta property="og:image" content="https://altarek-portfolio.vercel.app/src/assets/images/blog/designing-restful-apis-right-way.jpg">
     <link rel="icon" type="image/svg+xml" href="../../src/assets/images/logo-pro.svg" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,7 +32,10 @@
                 <a href="../../index.html#home" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Home</a>
                 <a href="../../index.html#work" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Work</a>
                 <a href="../../index.html#about" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">About</a>
+                <a href="../../index.html#experience" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Experience</a>
                 <a href="../" class="nav-item text-blue-500 transition duration-300">Blog</a>
+                <a href="../../index.html#contact" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Contact</a>
+                <a href="https://drive.google.com/file/d/1lRveoubbaa6YM_A1E2ovwkocyHwtmBgE/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Resume</a>
             </nav>
             <button id="mobile-menu-btn" class="md:hidden text-white" title="Open mobile menu" aria-label="Open mobile menu">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
@@ -42,7 +45,10 @@
             <a href="../../index.html#home" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Home</a>
             <a href="../../index.html#work" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Work</a>
             <a href="../../index.html#about" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">About</a>
+            <a href="../../index.html#experience" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Experience</a>
             <a href="../" class="block py-2 text-blue-500 transition duration-300">Blog</a>
+            <a href="../../index.html#contact" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Contact</a>
+            <a href="https://drive.google.com/file/d/1lRveoubbaa6YM_A1E2ovwkocyHwtmBgE/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="block mt-2 text-center bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Resume</a>
         </div>
     </header>
 
@@ -61,15 +67,79 @@
                 <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 text-sm text-gray-500 mb-8 border-y border-gray-800 py-4">
                     <span class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> Nov 18, 2025</span>
                     <span>•</span>
-                    <span class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 5 min read</span>
+                    <span class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 4 min read</span>
                 </div>
                 <div class="flex flex-wrap gap-2 justify-center md:justify-start mb-8">
                     <span class="bg-gray-800 text-gray-400 text-xs px-3 py-1.5 rounded-full">REST API</span><span class="bg-gray-800 text-gray-400 text-xs px-3 py-1.5 rounded-full">Node.js</span><span class="bg-gray-800 text-gray-400 text-xs px-3 py-1.5 rounded-full">Backend</span>
                 </div>
-                <img src="https://picsum.photos/seed/rest/800/500" alt="Designing RESTful APIs" class="w-full rounded-2xl shadow-2xl mb-12 border border-gray-800">
+                <img src="../../src/assets/images/blog/designing-restful-apis-right-way.jpg" alt="Designing RESTful APIs" class="w-full rounded-2xl shadow-2xl mb-12 border border-gray-800">
             </header>
             <div class="article-content">
-                <p><em>[Placeholder content: The full technical guide on REST API design will be published here soon.]</em></p>
+                <p>An API is a contract. Once a frontend, a mobile app, or another team depends on it, every inconsistency becomes their problem. Over several backend projects I have collected a set of principles that keep my APIs predictable. None of them are new, but applying them consistently makes a big difference.</p>
+
+                <h2>1. URLs Are Nouns, Methods Are Verbs</h2>
+                <p>Resources should be named with plural nouns, and the HTTP method should describe the action:</p>
+                <pre><code class="language-plaintext">GET    /students          → list students
+POST   /students          → create a student
+GET    /students/:id      → get one student
+PATCH  /students/:id      → update part of a student
+DELETE /students/:id      → delete a student</code></pre>
+                <p>Avoid URLs like <code>/getStudents</code> or <code>/createStudent</code>. The method already says what happens. Nested resources express relationships: <code>GET /students/:id/attendance</code>.</p>
+                <p>When an action does not fit CRUD, such as approving a request, it is fine to model it as a sub-resource: <code>POST /requests/:id/approval</code>.</p>
+
+                <h2>2. Use Status Codes Honestly</h2>
+                <p>Returning <code>200</code> with <code>{ "error": "..." }</code> in the body forces every client to parse the body to find out whether the request worked. Status codes exist for this:</p>
+                <ul>
+                    <li><strong>200 OK</strong>: successful read or update.</li>
+                    <li><strong>201 Created</strong>: a new resource was created.</li>
+                    <li><strong>204 No Content</strong>: success with nothing to return, often for deletes.</li>
+                    <li><strong>400 Bad Request</strong>: the request is malformed or fails validation.</li>
+                    <li><strong>401 Unauthorized</strong>: the client is not authenticated.</li>
+                    <li><strong>403 Forbidden</strong>: authenticated, but not allowed.</li>
+                    <li><strong>404 Not Found</strong>: the resource does not exist.</li>
+                    <li><strong>409 Conflict</strong>: the request conflicts with the current state, such as a duplicate email.</li>
+                    <li><strong>500 Internal Server Error</strong>: something went wrong on our side.</li>
+                </ul>
+
+                <h2>3. One Error Format Everywhere</h2>
+                <p>Every error should have the same shape, so the client can handle all of them with one piece of code:</p>
+                <pre><code class="language-javascript">{
+    "error": {
+        "code": "EMAIL_TAKEN",
+        "message": "A user with this email already exists",
+        "details": []
+    }
+}</code></pre>
+                <p>A machine-readable <code>code</code> lets the frontend react to specific cases, while <code>message</code> stays human-readable. Never send stack traces or raw database errors to the client.</p>
+
+                <h2>4. Paginate, Filter, and Sort with Query Parameters</h2>
+                <p>Collections grow, so list endpoints should be paginated from day one. Query parameters keep the URL structure clean:</p>
+                <pre><code class="language-plaintext">GET /students?page=2&amp;limit=20&amp;sort=-createdAt&amp;status=active</code></pre>
+                <p>Return pagination metadata alongside the data so the client can build navigation without guessing:</p>
+                <pre><code class="language-javascript">{
+    "data": [ /* ... */ ],
+    "meta": { "page": 2, "limit": 20, "total": 134, "totalPages": 7 }
+}</code></pre>
+                <p>Always enforce a maximum <code>limit</code> on the server. Otherwise a single request for <code>limit=100000</code> can hurt everyone.</p>
+
+                <h2>5. Validate Everything at the Boundary</h2>
+                <p>Treat every request as untrusted. Validate the body, params, and query against a schema before any business logic runs, and strip fields the client is not allowed to set. This protects against both bugs and abuse, and it keeps services free of defensive checks.</p>
+
+                <h2>6. Do Not Leak Internals</h2>
+                <ul>
+                    <li>Expose stable public identifiers instead of internal database IDs where possible.</li>
+                    <li>Never return fields like password hashes, even by accident. Explicit response mapping is safer than returning the whole database document.</li>
+                    <li>Keep field names consistent. If one endpoint uses <code>createdAt</code>, none should use <code>created_date</code>.</li>
+                </ul>
+
+                <h2>7. Version From the Start</h2>
+                <p>Prefixing routes with a version (<code>/api/v1/...</code>) costs nothing today and makes it possible to introduce breaking changes later without breaking existing clients.</p>
+
+                <h2>8. Think About Retries</h2>
+                <p><code>GET</code>, <code>PUT</code>, and <code>DELETE</code> should be idempotent: calling them twice has the same effect as calling them once. <code>POST</code> is not. For operations where a duplicate would be harmful, such as payments or bookings, accept an idempotency key from the client so a retried request does not create a second record.</p>
+
+                <h2>Summary</h2>
+                <p>Good API design is mostly about consistency. Predictable URLs, honest status codes, one error format, and safe defaults for pagination and validation make an API pleasant to use and easy to maintain. When I review my own endpoints, I ask one question: <em>could a new developer guess how this works without reading the code?</em> If the answer is yes, the design is probably right.</p>
             </div>
         </article>
         <div class="mt-16 pt-8 border-t border-gray-800 flex justify-between gap-4" id="prev-next-nav"></div>

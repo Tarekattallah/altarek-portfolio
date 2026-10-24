@@ -1,3 +1,21 @@
+/* Certification Cards (shares the blog card look) */
+.cert-card {
+    background: rgba(35, 37, 42, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px -15px rgba(59, 130, 246, 0.2);
+    border-color: rgba(59, 130, 246, 0.3);
+}
+
 /* Blog Section Styles */
 .blog-card {
     background: rgba(35, 37, 42, 0.6);

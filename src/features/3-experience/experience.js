@@ -1,10 +1,24 @@
+// type: 'Training' | 'Diploma' | 'Education' — shown as a badge on each tab
 const experiences = [
     {
-        company: 'Digilians',
-        role: 'AI-Powered Software Development',
-        period: '2025 - 2026 (9-Month Professional Diploma)',
+        company: 'Ministry of Justice',
+        type: 'Training',
+        role: 'Full Stack Development Trainee',
+        period: 'Sep 5, 2026 - Oct 16, 2026',
         tasks: [
-            'Completed an intensive 9-month professional software development program focused on modern software engineering, AI-powered development, full-stack application development, cloud computing, DevOps, cybersecurity, and software architecture.'
+            'Contributed to the development of a judicial fee calculation and review platform using React, TypeScript, Express, PostgreSQL, and Prisma.',
+            'Worked on rule-based fee calculations, role-based access control, and dashboards for tracking assessments and settlements.'
+        ],
+        badges: ['React', 'TypeScript', 'Express', 'PostgreSQL', 'Prisma', 'RBAC']
+    },
+    {
+        company: 'Digilians',
+        type: 'Diploma',
+        role: 'Software Development Diploma — AI-Powered Software Development',
+        period: 'Dec 2025 - Sep 2026 (9 Months)',
+        tasks: [
+            'Delivered by the National Telecommunication Institute (NTI) with the Egyptian Military Academy under the Digital Pioneers Initiative.',
+            'Intensive training in full-stack development, software architecture, cybersecurity, cloud computing, DevOps, and AI-assisted development.'
         ],
         modules: [
             {
@@ -36,34 +50,36 @@ const experiences = [
     },
     {
         company: 'National Telecommunication Institute (NTI)',
-        role: 'Front-End Development Trainee / Scholarship Program',
+        type: 'Training',
+        role: 'Web Design Training — Digital Egypt Youth Program',
         period: 'Jul 2025 - Aug 2025',
-        tasks: ['Completed an intensive one-month Front-End development training program focused on building responsive and interactive web applications.', 'Learned HTML, CSS, JavaScript, and mastered React fundamentals.', 'Developed practical web apps integrating RESTful APIs and managing state with Redux/Context API.', 'Gained experience in UI/UX design, responsive layouts, and maintaining clean project structure.', 'Applied best practices for app architecture and performance optimization']
+        tasks: [
+            'Completed 120 hours of training: 90 technical hours in web design and front-end development, and 30 hours of freelancing coaching.',
+            'Finished the program with a final score of 87%.'
+        ],
+        certificateUrl: 'https://drive.google.com/file/d/16k83NOxDHpW4yREaAQGQxNEH1ydu0RfR/view'
     },
     {
-        company: 'CS50 Problem-Solving & Projects Team',
-        role: 'CS50 Problem-Solving & Projects Trainee',
-        period: 'Jan 28, 2024 - Feb 1, 2024',
+        company: 'Benha University',
+        type: 'Education',
+        role: 'Faculty of Science',
+        period: '2018 - 2024',
         tasks: [
-            'Participated in CS50 Harvard University course projects and problem sets.',
-            'Gained experience in C, Python, and web development fundamentals.',
-            'Developed practical projects implementing algorithms, data structures, and clean code practices.',
-            'Collaborated with team members to analyze problems, design solutions, and optimize project performance.',
-            'Enhanced problem-solving and teamwork skills through collaborative project development.'
-        ]
-    },
-    {
-        company: 'Harvard University (via edX)',
-        role: 'CS50’s Introduction to Programming with Python',
-        period: 'Summer 2024 (6 Weeks)',
-        tasks: [
-            'Learned Python fundamentals including variables, loops, functions, and object-oriented programming.',
-            'Implemented algorithms and data structures to solve real-world programming problems.',
-            'Built small projects demonstrating web programming, file handling, and automation.',
-            'Gained practical experience in debugging, testing, and applying clean coding practices.',
+            'Diploma in Software Development (2023 - 2024).',
+            'B.Sc. in Science, Special Chemistry (2018 - 2022).'
         ]
     }
 ];
+
+const typeStyles = {
+    Training: 'bg-emerald-900/30 text-emerald-300 border-emerald-700/40',
+    Diploma: 'bg-violet-900/30 text-violet-300 border-violet-700/40',
+    Education: 'bg-amber-900/30 text-amber-300 border-amber-700/40',
+};
+
+function typeBadge(type) {
+    return `<span class="inline-block border text-[10px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full ${typeStyles[type]}">${type}</span>`;
+}
 
 export function initExperienceFeature() {
     const tabsContainer = document.getElementById('experience-tabs');
@@ -72,8 +88,11 @@ export function initExperienceFeature() {
 
     experiences.forEach((exp, index) => {
         const isActive = index === 0;
-        tabsContainer.innerHTML += `<button class="experience-tab-btn flex-shrink-0 ${isActive ? 'text-blue-500 border-b-2 border-blue-500' : 'text-gray-400'} px-4 py-2 transition-colors duration-300" data-index="${index}">${exp.company}</button>`;
-        
+        tabsContainer.innerHTML += `<button class="experience-tab-btn flex-shrink-0 flex flex-col items-start gap-1 text-left ${isActive ? 'text-blue-500 border-b-2 border-blue-500' : 'text-gray-400'} px-4 py-2 transition-colors duration-300" data-index="${index}">
+                <span>${exp.company}</span>
+                ${typeBadge(exp.type)}
+            </button>`;
+
         let modulesHTML = '';
         if (exp.modules) {
             modulesHTML = `<div class="mt-8">
@@ -104,21 +123,28 @@ export function initExperienceFeature() {
             </div>`;
         }
 
+        const certificateHTML = exp.certificateUrl
+            ? `<a href="${exp.certificateUrl}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-blue-400 hover:text-blue-300 text-sm font-semibold">View certificate <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>`
+            : '';
+
         contentContainer.innerHTML += `
             <div class="experience-content-panel ${isActive ? 'block' : 'hidden'} animate-fade-in" data-index="${index}">
+                <div class="mb-2">${typeBadge(exp.type)}</div>
                 <h3 class="text-2xl font-bold text-white">${exp.role} <span class="text-blue-500">@ ${exp.company}</span></h3>
                 <p class="text-sm text-gray-400 mt-1 mb-6 uppercase tracking-wider font-medium">${exp.period}</p>
                 <ul class="space-y-3 mb-6">${exp.tasks.map(task => `<li class="flex items-start gap-3"><span class="text-blue-500 mt-1">▹</span><span class="text-gray-300 leading-relaxed">${task}</span></li>`).join('')}</ul>
+                ${certificateHTML}
                 ${modulesHTML}
                 ${badgesHTML}
             </div>`;
     });
 
     tabsContainer.addEventListener('click', (e) => {
-        if (e.target.matches('.experience-tab-btn')) {
-            const index = e.target.getAttribute('data-index');
+        const tab = e.target.closest('.experience-tab-btn');
+        if (tab) {
+            const index = tab.getAttribute('data-index');
             document.querySelectorAll('.experience-tab-btn').forEach(b => b.classList.remove('text-blue-500', 'border-b-2', 'border-blue-500'));
-            e.target.classList.add('text-blue-500', 'border-b-2', 'border-blue-500');
+            tab.classList.add('text-blue-500', 'border-b-2', 'border-blue-500');
             document.querySelectorAll('.experience-content-panel').forEach(p => p.classList.add('hidden'));
             contentContainer.querySelector(`.experience-content-panel[data-index="${index}"]`).classList.remove('hidden');
         }

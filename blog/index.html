@@ -29,7 +29,10 @@
                 <a href="../index.html#home" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Home</a>
                 <a href="../index.html#work" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Work</a>
                 <a href="../index.html#about" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">About</a>
+                <a href="../index.html#experience" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Experience</a>
                 <a href="./" class="nav-item text-blue-500 transition duration-300">Blog</a>
+                <a href="../index.html#contact" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Contact</a>
+                <a href="https://drive.google.com/file/d/1lRveoubbaa6YM_A1E2ovwkocyHwtmBgE/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Resume</a>
             </nav>
             <button id="mobile-menu-btn" class="md:hidden text-white" title="Open mobile menu" aria-label="Open mobile menu">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
@@ -39,7 +42,10 @@
             <a href="../index.html#home" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Home</a>
             <a href="../index.html#work" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Work</a>
             <a href="../index.html#about" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">About</a>
+            <a href="../index.html#experience" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Experience</a>
             <a href="./" class="block py-2 text-blue-500 transition duration-300">Blog</a>
+            <a href="../index.html#contact" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Contact</a>
+            <a href="https://drive.google.com/file/d/1lRveoubbaa6YM_A1E2ovwkocyHwtmBgE/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="block mt-2 text-center bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Resume</a>
         </div>
     </header>
 
@@ -98,15 +104,6 @@
         document.addEventListener('DOMContentLoaded', () => {
             initGeneralUI(); initParticles();
             initBlogPage();
-
-            // Mobile Menu Toggle
-            const btn = document.getElementById('mobile-menu-btn');
-            const menu = document.getElementById('mobile-menu');
-            if (btn && menu) {
-                btn.addEventListener('click', () => {
-                    menu.classList.toggle('hidden');
-                });
-            }
         });
     </script>
 </body>

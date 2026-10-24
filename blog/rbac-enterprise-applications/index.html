@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Understanding RBAC in Enterprise Applications - Al-Tarek Attallah</title>
     <meta name="description" content="A practical overview of Role-Based Access Control and how users, roles, permissions, and authorization work together in enterprise applications.">
-    <link rel="canonical" href="https://tarekattallah.github.io/-Portfolio/blog/rbac-enterprise-applications/">
+    <link rel="canonical" href="https://altarek-portfolio.vercel.app/blog/rbac-enterprise-applications/">
     
     <meta property="og:type" content="article">
     <meta property="og:title" content="Understanding RBAC in Enterprise Applications">
     <meta property="og:description" content="A practical overview of Role-Based Access Control and how users, roles, permissions, and authorization work together in enterprise applications.">
-    <meta property="og:image" content="https://picsum.photos/seed/rbac/800/500">
+    <meta property="og:image" content="https://altarek-portfolio.vercel.app/src/assets/images/blog/rbac-enterprise-applications.jpg">
     
     <link rel="icon" type="image/svg+xml" href="../../src/assets/images/logo-pro.svg" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -34,7 +34,10 @@
                 <a href="../../index.html#home" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Home</a>
                 <a href="../../index.html#work" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Work</a>
                 <a href="../../index.html#about" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">About</a>
+                <a href="../../index.html#experience" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Experience</a>
                 <a href="../" class="nav-item text-blue-500 transition duration-300">Blog</a>
+                <a href="../../index.html#contact" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Contact</a>
+                <a href="https://drive.google.com/file/d/1lRveoubbaa6YM_A1E2ovwkocyHwtmBgE/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Resume</a>
             </nav>
             <button id="mobile-menu-btn" class="md:hidden text-white" title="Open mobile menu" aria-label="Open mobile menu">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
@@ -44,7 +47,10 @@
             <a href="../../index.html#home" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Home</a>
             <a href="../../index.html#work" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Work</a>
             <a href="../../index.html#about" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">About</a>
+            <a href="../../index.html#experience" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Experience</a>
             <a href="../" class="block py-2 text-blue-500 transition duration-300">Blog</a>
+            <a href="../../index.html#contact" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Contact</a>
+            <a href="https://drive.google.com/file/d/1lRveoubbaa6YM_A1E2ovwkocyHwtmBgE/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="block mt-2 text-center bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Resume</a>
         </div>
     </header>
 
@@ -63,17 +69,98 @@
                 <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 text-sm text-gray-500 mb-8 border-y border-gray-800 py-4">
                     <span class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> Oct 28, 2025</span>
                     <span>•</span>
-                    <span class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 6 min read</span>
+                    <span class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 4 min read</span>
                 </div>
                 <div class="flex flex-wrap gap-2 justify-center md:justify-start mb-8">
                     <span class="bg-gray-800 text-gray-400 text-xs px-3 py-1.5 rounded-full">RBAC</span><span class="bg-gray-800 text-gray-400 text-xs px-3 py-1.5 rounded-full">Security</span><span class="bg-gray-800 text-gray-400 text-xs px-3 py-1.5 rounded-full">Backend</span><span class="bg-gray-800 text-gray-400 text-xs px-3 py-1.5 rounded-full">Enterprise</span>
                 </div>
-                <img src="https://picsum.photos/seed/rbac/800/500" alt="Understanding RBAC" class="w-full rounded-2xl shadow-2xl mb-12 border border-gray-800">
+                <img src="../../src/assets/images/blog/rbac-enterprise-applications.jpg" alt="Understanding RBAC" class="w-full rounded-2xl shadow-2xl mb-12 border border-gray-800">
             </header>
             <div class="article-content">
-                <p><em>[Placeholder content: The full technical details regarding RBAC design will be published here soon.]</em></p>
+                <p>Almost every enterprise application eventually has to answer the same question on every request: <em>is this user allowed to do this?</em> When I started building backends, I answered it with a few <code>if</code> statements. That worked until the third role appeared. In this article I want to explain how Role-Based Access Control (RBAC) solves the problem properly, and how I approach it in Node.js applications.</p>
+
+                <h2>Authentication vs Authorization</h2>
+                <p>These two words are often mixed up, so it is worth separating them first:</p>
+                <ul>
+                    <li><strong>Authentication</strong> answers <em>who are you?</em> It is usually handled with a login and a token such as a JWT.</li>
+                    <li><strong>Authorization</strong> answers <em>what are you allowed to do?</em> This is where RBAC lives.</li>
+                </ul>
+                <p>A valid token only proves identity. It says nothing about whether that user may delete a student record or approve a request.</p>
+
                 <h2>The Concept of Roles vs Permissions</h2>
-                <p>A common mistake is verifying user roles directly in business logic (e.g., <code>if (user.role === 'admin')</code>). Instead, RBAC systems should evaluate permissions mapped to those roles.</p>
+                <p>A common mistake is checking roles directly inside business logic:</p>
+                <pre><code class="language-javascript">// Fragile: every new role means editing code everywhere
+if (user.role === 'admin' || user.role === 'supervisor') {
+    await studentService.update(id, data);
+}</code></pre>
+                <p>The moment the business asks for a new role, for example a "data entry" user who can update students but not delete them, you have to hunt down every check in the codebase. RBAC fixes this by adding one level of indirection:</p>
+                <ul>
+                    <li><strong>Permissions</strong> describe a single action on a resource, such as <code>students:read</code> or <code>students:update</code>.</li>
+                    <li><strong>Roles</strong> are named groups of permissions, such as <em>Admin</em>, <em>Supervisor</em>, or <em>Viewer</em>.</li>
+                    <li><strong>Users</strong> are assigned one or more roles.</li>
+                </ul>
+                <p>The code only ever asks about permissions. Which roles hold which permissions becomes <em>data</em>, not code, so it can change without a deployment.</p>
+
+                <h2>Modeling RBAC in the Database</h2>
+                <p>A simple and flexible model has three collections (or tables):</p>
+                <pre><code class="language-javascript">// permissions
+{ key: 'students:update', description: 'Edit student records' }
+
+// roles
+{ name: 'Supervisor', permissions: ['students:read', 'students:update', 'attendance:read'] }
+
+// users
+{ email: 'sara@example.com', roles: ['Supervisor'] }</code></pre>
+                <p>Using a consistent <code>resource:action</code> naming convention keeps the permission list readable and makes it easy to group permissions by module in an admin screen.</p>
+
+                <h2>Enforcing Permissions with Middleware</h2>
+                <p>In Express, the cleanest place to enforce authorization is a small middleware that runs after authentication and before the controller:</p>
+                <pre><code class="language-javascript">function authorize(...required) {
+    return (req, res, next) =&gt; {
+        const granted = req.user?.permissions || [];
+        const allowed = required.every(p =&gt; granted.includes(p));
+
+        if (!allowed) {
+            return res.status(403).json({ error: 'Forbidden' });
+        }
+        next();
+    };
+}
+
+router.patch('/students/:id', authenticate, authorize('students:update'), controller.update);
+router.delete('/students/:id', authenticate, authorize('students:delete'), controller.remove);</code></pre>
+                <p>Now each route declares exactly what it needs. Reading the routes file tells you the security rules of the whole module at a glance.</p>
+
+                <h2>Where Do the Permissions Come From?</h2>
+                <p>Resolving a user's roles into permissions on every request means extra database queries. There are two common approaches:</p>
+                <ol>
+                    <li><strong>Embed permissions in the token.</strong> When the user logs in, resolve their permissions once and put them in the JWT payload. Requests become fast, but permission changes only take effect when the token is refreshed, so tokens should be short-lived.</li>
+                    <li><strong>Cache permissions on the server.</strong> Keep a role → permissions map in memory (or Redis) and invalidate it when an admin edits a role. Changes apply immediately at the cost of a bit more infrastructure.</li>
+                </ol>
+                <p>For most internal systems, short-lived tokens plus a refresh flow are a good balance between simplicity and freshness.</p>
+
+                <h2>RBAC Is Not the Whole Story</h2>
+                <p>RBAC answers "can this role update students?" but not "can this user update <em>this particular</em> student?" Many real rules depend on ownership or scope, for example a supervisor who may only manage students in their own department. I handle those checks in the service layer, after RBAC has already allowed the action in general:</p>
+                <pre><code class="language-javascript">async function updateStudent(user, studentId, data) {
+    const student = await studentRepository.findByPublicId(studentId);
+    if (!student) throw new NotFoundError('Student not found');
+
+    if (student.departmentId !== user.departmentId) {
+        throw new ForbiddenError('You can only manage students in your department');
+    }
+    return studentRepository.update(student.id, data);
+}</code></pre>
+
+                <h2>Practical Tips</h2>
+                <ul>
+                    <li><strong>Deny by default.</strong> A route without an explicit permission should not be reachable by accident.</li>
+                    <li><strong>Return 401 vs 403 correctly.</strong> 401 means "not authenticated"; 403 means "authenticated but not allowed".</li>
+                    <li><strong>Never trust the frontend.</strong> Hiding a button is a UX decision; the API must still enforce the rule.</li>
+                    <li><strong>Log sensitive actions.</strong> Who changed a role, and when, is exactly the kind of question auditors ask.</li>
+                    <li><strong>Seed roles in code.</strong> Keep a seed script for the default roles and permissions so every environment starts in a known state.</li>
+                </ul>
+
+                <p>RBAC is one of those topics that looks like overhead in a small project and becomes essential in a real one. Designing it early, with permissions as the unit of authorization, keeps the codebase clean and lets the business evolve its roles without touching the code.</p>
             </div>
         </article>
         <div class="mt-16 pt-8 border-t border-gray-800 flex justify-between gap-4" id="prev-next-nav"></div>
