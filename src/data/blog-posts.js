@@ -121,6 +121,11 @@ export const blogPosts = [
     }
 ];
 
+// Keep listing order independent of the order in which posts are maintained.
+export function getSortedBlogPosts() {
+    return [...blogPosts].sort((a, b) => new Date(b.date) - new Date(a.date));
+}
+
 // Helper function to resolve paths based on current page depth
 export function getRelativePath(depth) {
     if (depth === 0) return './';

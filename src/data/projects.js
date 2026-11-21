@@ -1,5 +1,19 @@
 export const projectsData = [
     {
+        id: 'aethra-crm',
+        title: 'Aethra CRM — Client Intake & Project Delivery',
+        shortDescription: 'A bilingual CRM connecting customer requests, intelligent routing, track-specific work orders, execution teams, and payment records.',
+        longDescription: 'Aethra CRM manages the journey from an Arabic/English customer request to assigned work and delivery. It supports staff-assisted and voice intake, normalized customer profiles, round-robin, least-busy and skill-based routing, SLA escalation, and independent work orders for each service track. Execution teams collaborate through scoped workspaces, while payment records, protected attachments, role-based permissions, audit records, and SSE notifications keep operations connected.',
+        category: 'Full Stack',
+        tags: ['React', 'TypeScript', 'Node.js', 'Express', 'MongoDB', 'Mongoose', 'RBAC', 'SSE', 'Arabic RTL'],
+        tech: 'React / TypeScript / MongoDB',
+        featured: true,
+        hasCaseStudy: true,
+        githubUrl: 'https://github.com/Tarekattallah/Aethra-CRM',
+        liveUrl: 'https://aethra-crm.vercel.app/',
+        coverImage: 'src/assets/images/projects/aethra-crm.jpg',
+    },
+    {
         id: 'judicial-fees',
         title: 'Egyptian Judicial Fees — Court Fee Calculation Platform',
         shortDescription: 'An Arabic RTL platform for court fee estimation and settlement review, with precise rule-based calculations and traceable legal references.',

@@ -26,7 +26,7 @@ The portfolio heavily emphasizes **Backend & Enterprise Engineering** while main
 ## ✨ Features
 
 - **Dynamic Project Showcase:** A scalable, data-driven projects hub (`/projects/`) rendering project cards dynamically.
-- **In-Depth Case Studies:** Dedicated technical breakdowns for complex systems like **MADMS** and the **Military Mess System**, detailing the architecture, database design, and business logic.
+- **In-Depth Case Studies:** Dedicated technical breakdowns for **Aethra CRM**, **MADMS**, and other systems, detailing the architecture, database design, and business logic. Aethra includes links to its source repository and live client portal.
 - **Technical Blog:** A custom-built blog section featuring deep dives into AI-assisted development, cloud architecture, and RESTful API design.
 - **Interactive UI:** Smooth reveal animations, custom modal windows, responsive grid layouts, and interactive particles.
 - **Modular Data Structure:** Project data and routing logic is abstracted into external JS modules (`src/data/projects.js`), keeping the HTML clean and maintainable.
@@ -57,7 +57,7 @@ The portfolio heavily emphasizes **Backend & Enterprise Engineering** while main
     ├── assets/                  # CSS, Images, and Global Styles
     ├── data/                    # JSON/JS data models (projects.js)
     ├── features/                # Feature-specific logic (Hero, Work, Experience, Blog)
-    └── shared/                  # Shared UI components (Modals, Preloader, Nav)
+    └── shared/                  # Shared UI components (project dialog, preloader, nav)
 ```
 
 ## 💻 Local Development
@@ -80,6 +80,14 @@ To run this project locally, you need a local web server (to avoid CORS issues w
    Open the local URL printed by the server (e.g. `http://localhost:3000`).
 
 **Live site:** [altarek-portfolio.vercel.app](https://altarek-portfolio.vercel.app)
+
+## Content updates
+
+- Add projects in `src/data/projects.js`; set `featured: true` to include them on the homepage. A project with `hasCaseStudy: true` also needs `projects/<id>/index.html`.
+- Article metadata lives in `src/data/blog-posts.js`, with article bodies in `blog/<slug>/index.html`. Homepage articles and the blog listing are sorted by date, newest first.
+- Desktop and mobile Resume links in every page open the current Google Drive resume. Update all of these links when the resume's file ID changes.
+- The homepage and projects listing share `src/shared/ui/project-modal.js`. If Swiper is unavailable, featured projects use a grid and the rest of the homepage continues to initialize.
+- The Aethra CRM cover is a demonstration dashboard capture from [its public repository](https://github.com/Tarekattallah/Aethra-CRM/blob/main/docs/execution-workflow/sidebar-collapsed-fixed.jpg).
 
 ## 🔧 Build Scripts
 

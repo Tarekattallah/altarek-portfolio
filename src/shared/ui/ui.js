@@ -12,7 +12,8 @@ export function initPreloader() {
         }, 500);
     }
 
-    window.addEventListener('load', hide);
+    if (document.readyState === 'complete') hide();
+    else window.addEventListener('load', hide, { once: true });
     // Safety cap: a slow third-party resource should never keep the page hidden
     setTimeout(hide, 2500);
 }
@@ -32,9 +33,22 @@ export function initGeneralUI() {
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
     if (mobileMenuBtn && mobileMenu) {
-        mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        const setMenuOpen = (open) => {
+            mobileMenu.classList.toggle('hidden', !open);
+            mobileMenuBtn.setAttribute('aria-expanded', String(open));
+            mobileMenuBtn.setAttribute('aria-label', open ? 'Close mobile menu' : 'Open mobile menu');
+        };
+        mobileMenuBtn.setAttribute('aria-controls', 'mobile-menu');
+        setMenuOpen(false);
+        mobileMenuBtn.addEventListener('click', () => setMenuOpen(mobileMenu.classList.contains('hidden')));
         mobileMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+            link.addEventListener('click', () => setMenuOpen(false));
+        });
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
+                setMenuOpen(false);
+                mobileMenuBtn.focus();
+            }
         });
     }
 

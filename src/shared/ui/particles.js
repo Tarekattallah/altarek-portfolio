@@ -6,6 +6,7 @@ export function initParticles() {
     const reduceMotion = prefersReducedMotion();
 
     const ctx = canvas.getContext('2d');
+    if (!ctx) return;
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     let particlesArray;

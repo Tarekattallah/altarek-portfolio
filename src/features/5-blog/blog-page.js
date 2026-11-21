@@ -1,6 +1,7 @@
-import { blogPosts, getPostImage } from '../../data/blog-posts.js';
+import { getSortedBlogPosts, getPostImage } from '../../data/blog-posts.js';
 
 export function initBlogPage() {
+    const blogPosts = getSortedBlogPosts();
     const grid = document.getElementById('blog-grid');
     const featuredContainer = document.getElementById('featured-article-container');
     const filtersContainer = document.getElementById('category-filters');

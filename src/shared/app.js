@@ -15,11 +15,12 @@ initPreloader();
 document.addEventListener('DOMContentLoaded', () => {
     initGeneralUI();
     initParticles();
-    initAnimations();
     initHeroFeature();
     initWorkFeature();
     initExperienceFeature();
     initCertificationsFeature();
     initBlogFeature();
     initContactForm();
+    // Include cards inserted by the feature initializers in the reveal animation.
+    initAnimations();
 });

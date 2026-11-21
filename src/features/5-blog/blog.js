@@ -1,4 +1,4 @@
-import { blogPosts, getPostImage } from '../../data/blog-posts.js';
+import { getSortedBlogPosts, getPostImage } from '../../data/blog-posts.js';
 
 export function initBlogFeature() {
     const blogWrapper = document.getElementById('blog-wrapper');
@@ -7,7 +7,7 @@ export function initBlogFeature() {
     blogWrapper.innerHTML = ''; // Clear existing
 
     // Get latest 3 posts for the homepage
-    const recentPosts = blogPosts.slice(0, 3);
+    const recentPosts = getSortedBlogPosts().slice(0, 3);
 
     recentPosts.forEach(post => {
         const blogCard = `

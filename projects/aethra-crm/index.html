@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aethra CRM — Client Intake &amp; Project Delivery | Case Study</title>
+
+    <meta name="description" content="How Aethra CRM connects bilingual client intake, intelligent routing, separate work orders, execution teams, and payment records with scoped permissions.">
+
+    <link rel="canonical" href="https://altarek-portfolio.vercel.app/projects/aethra-crm/">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Al-Tarek Attallah">
+    <meta property="og:url" content="https://altarek-portfolio.vercel.app/projects/aethra-crm/">
+    <meta property="og:title" content="Aethra CRM — Client Intake &amp; Project Delivery | Case Study">
+    <meta property="og:description" content="How Aethra CRM connects bilingual client intake, intelligent routing, separate work orders, execution teams, and payment records with scoped permissions.">
+    <meta property="og:image" content="https://altarek-portfolio.vercel.app/src/assets/images/projects/aethra-crm.jpg">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="720">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/svg+xml" href="../../src/assets/images/logo-pro.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../../src/assets/css/global.css">
+    <link rel="stylesheet" href="../../src/features/5-blog/blog.css">
+    <link rel="stylesheet" href="../../src/features/5-blog/article.css">
+    <link rel="stylesheet" href="../../src/assets/css/tailwind.css">
+</head>
+<body class="overflow-x-hidden bg-[#0a0f18]">
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Header -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 bg-gray-900/80 backdrop-blur-sm transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../../index.html" class="text-2xl font-bold text-white flex items-center gap-2 transform hover:scale-105 transition-transform">
+                <img src="../../src/assets/images/logo-pro.svg" alt="T. Attallah Logo" class="w-10 h-10 rounded-full object-cover border-2 border-blue-600">
+                <span>T. Attallah</span>
+            </a>
+            <nav class="hidden lg:flex items-center space-x-8">
+                <a href="../../index.html#home" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Home</a>
+                <a href="../../index.html#work" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Work</a>
+                <a href="../../index.html#about" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">About</a>
+                <a href="../../index.html#experience" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Experience</a>
+                <a href="../../blog/" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Blog</a>
+                <a href="../../index.html#contact" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Contact</a>
+                <a href="https://drive.google.com/file/d/14XI5V9rT21khh1foOg0y53cxEfvmdgaq/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Resume</a>
+            </nav>
+            <button id="mobile-menu-btn" class="lg:hidden text-white" title="Open mobile menu" aria-label="Open mobile menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden px-6 pb-4 bg-gray-900/80 backdrop-blur-sm">
+            <a href="../../index.html#home" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Home</a>
+            <a href="../../index.html#work" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Work</a>
+            <a href="../../index.html#about" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">About</a>
+            <a href="../../index.html#experience" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Experience</a>
+            <a href="../../blog/" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Blog</a>
+            <a href="../../index.html#contact" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Contact</a>
+            <a href="https://drive.google.com/file/d/14XI5V9rT21khh1foOg0y53cxEfvmdgaq/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="block mt-2 text-center bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Resume</a>
+        </div>
+    </header>
+
+    <main class="pt-32 pb-20 container mx-auto px-6 min-h-screen max-w-4xl" data-project-slug="aethra-crm">
+
+        <div class="mb-8">
+            <a href="../" class="text-gray-400 hover:text-blue-500 flex items-center gap-2 transition-colors w-fit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Back to Projects
+            </a>
+        </div>
+
+        <article>
+            <header class="mb-12 text-center md:text-left">
+                <span class="text-blue-500 font-semibold uppercase tracking-wider mb-4 block">Full Stack / CRM &amp; Operations</span>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">Aethra CRM — Client Intake &amp; Project Delivery</h1>
+                <p class="text-xl text-gray-400 leading-relaxed max-w-3xl">From a customer request to assigned work, team collaboration, and delivery in one workspace.</p>
+                <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 mt-8">
+                    <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded text-sm font-medium">React &amp; TypeScript</span>
+                    <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded text-sm font-medium">Node.js &amp; Express</span>
+                    <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded text-sm font-medium">MongoDB &amp; Mongoose</span>
+                    <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded text-sm font-medium">RBAC &amp; SSE</span>
+                </div>
+                <div class="mt-6 flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="https://aethra-crm.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2.5 px-6 rounded-lg transition duration-300">Live Client Portal</a>
+                    <a href="https://github.com/Tarekattallah/Aethra-CRM" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-gray-800 hover:bg-gray-700 text-white font-semibold py-2.5 px-6 rounded-lg transition duration-300">View on GitHub</a>
+                </div>
+            </header>
+
+            <figure class="mb-12">
+                <img src="../../src/assets/images/projects/aethra-crm.jpg" alt="Aethra CRM Arabic operational dashboard with work orders, customer requests, and routing review" width="1280" height="720" class="w-full rounded-xl shadow-2xl">
+                <figcaption class="text-sm text-gray-400 text-center mt-4">Operational dashboard using demonstration data from the project's isolated preview.</figcaption>
+            </figure>
+
+            <div class="article-content">
+                <h2>Overview</h2>
+                <p>Aethra CRM is a full-stack system for service teams that receive customer requests, assign them to specialists, and follow the work through delivery. Built with React, TypeScript, Express, and MongoDB, it connects a bilingual customer portal with internal intake, routing, technical discovery, execution teams, and payment records.</p>
+                <p>The internal workspace uses the Aethra identity. The public portal has configurable company branding, with Digency as the initial customer-facing brand.</p>
+
+                <h2>The Problem</h2>
+                <p>A single customer request can involve several service tracks, different engineers, separate budgets, and multiple follow-ups. Keeping that work in messages and spreadsheets makes it difficult to establish ownership, avoid duplicate customer records, and control who can see each scope or receipt.</p>
+                <ul>
+                    <li>Repeat inquiries need one customer profile without losing the history of each request.</li>
+                    <li>Multi-track work needs separate owners, deliverables, and financial records.</li>
+                    <li>Unclassified and voice requests need staff review before an engineer is assigned.</li>
+                    <li>Team collaboration must respect track, membership, and permission boundaries.</li>
+                </ul>
+
+                <h2>From Intake to Delivery</h2>
+                <ol>
+                    <li><strong>Capture the request:</strong> customers use an Arabic/English quick or detailed form, or authorized staff register the inquiry. Attachments and voice requests are supported.</li>
+                    <li><strong>Identify the customer:</strong> normalized phone numbers link repeat inquiries to one customer profile, while requests retain independent codes and histories.</li>
+                    <li><strong>Review and split the scope:</strong> intake staff classify unclear requests. Work spanning different tracks becomes separate work orders under one parent request.</li>
+                    <li><strong>Assign and follow up:</strong> manual, round-robin, least-busy, and skill-based routing support receiver capacity, acknowledgment deadlines, contact confirmation, and SLA escalation.</li>
+                    <li><strong>Coordinate execution:</strong> leaders approve execution teams, authorized members discuss requirements, and engineers record technical scope and deliverables.</li>
+                    <li><strong>Record settlement:</strong> deposits, final payments, and receipts belong to their work order. A team conversation becomes read-only once execution is complete and payment is settled.</li>
+                </ol>
+
+                <h2>Engineering Decisions</h2>
+                <p><strong>Separate customers, requests, and work orders.</strong> Customer identity stays consistent across repeat inquiries. Each track owns its working scope, assignee, selected attachments, currency, and payment records. The parent request groups the work without counting its children's payment totals twice.</p>
+                <p><strong>Enforce access at the API.</strong> JWT authentication, role permissions, track ownership, and execution-team membership determine access to actions and records. A participant in one team does not automatically receive access to another track's requirements or financial receipts.</p>
+                <p><strong>Use SSE for live notifications.</strong> Server-Sent Events notify the appropriate users about operational changes. Scoped API reads provide current workspace state and messages.</p>
+                <p><strong>Keep files behind authorization.</strong> Upload validation and protected downloads cover attachments and receipts. Local development uses filesystem storage, while the deployment configuration supports MongoDB GridFS.</p>
+
+                <h2>Technology &amp; Verification</h2>
+                <ul>
+                    <li><strong>Frontend:</strong> React 18, TypeScript, Vite, Tailwind CSS, Axios, Lucide, and Sonner.</li>
+                    <li><strong>Backend:</strong> Node.js, Express, TypeScript, Zod validation, JWT authentication, and bcrypt.</li>
+                    <li><strong>Data and reporting:</strong> MongoDB, Mongoose, protected uploads, and ExcelJS exports.</li>
+                    <li><strong>Verification:</strong> Node's test runner and isolated MongoDB integration tests cover intake, routing, work-order separation, permissions, files, teams, payments, and branding.</li>
+                    <li><strong>Deployment:</strong> Vercel for the frontend, Render for the API, and MongoDB Atlas for data and uploaded files.</li>
+                </ul>
+
+                <h2>Lessons Learned</h2>
+                <p>The central design challenge was separating the customer relationship from the individual pieces of work. Modeling that distinction makes routing, permissions, payments, and team archives easier to reason about as a request moves between intake staff, engineers, and team leaders.</p>
+                <p>Payment records track confirmed activity and receipts; the application does not process payments through a payment gateway. Voice requests are reviewed by staff rather than automatically transcribed.</p>
+                <p><a href="https://github.com/Tarekattallah/Aethra-CRM#readme" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 underline">Explore the source code, workflow documentation, and setup guide on GitHub.</a></p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer class="py-6 text-center text-gray-500 border-t border-gray-800">
+        <p>Designed & Built by Al-Tarek Attallah</p>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button id="scrollToTopBtn" class="fixed bottom-8 right-8 w-12 h-12 bg-blue-600/80 backdrop-blur-sm text-white rounded-full hidden justify-center items-center shadow-lg hover:bg-blue-500 transition-all duration-300 translate-y-20 z-40">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" /></svg>
+    </button>
+
+
+    <script type="module">
+        import { initGeneralUI } from '../../src/shared/ui/ui.js';
+        import { initParticles } from '../../src/shared/ui/particles.js';
+        document.addEventListener('DOMContentLoaded', () => {
+            initGeneralUI();
+            initParticles();
+        });
+    </script>
+</body>
+</html>

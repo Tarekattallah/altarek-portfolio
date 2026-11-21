@@ -61,9 +61,10 @@ function animateHeroText() {
 }
 
 export function initHeroFeature() {
-    // These animations should start after the preloader has faded out
-    window.addEventListener('load', () => {
+    const start = () => {
         animateHeroText();
         typeEffect();
-    });
+    };
+    if (document.readyState === 'complete') start();
+    else window.addEventListener('load', start, { once: true });
 }
