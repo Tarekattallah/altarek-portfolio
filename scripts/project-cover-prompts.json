@@ -1,0 +1,104 @@
+{
+  "generator": "Built-in image_gen",
+  "encoding": "WebP quality 84, original dimensions",
+  "images": [
+    {
+      "id": "aethra-crm",
+      "file": "src/assets/images/projects/covers/aethra-crm.webp",
+      "prompt": "Use case: stylized-concept. Asset type: editorial cover artwork for a software engineer portfolio project card, wide 16:9 landscape composition, 1536x864 or equivalent. Primary request: striking premium conceptual 3D still life that clearly communicates the project's purpose at thumbnail size. Subject: An elegant glass-and-metal customer relationship hub: three distinct client contact cards are routed along beautiful cyan light paths into three team workspaces; central luminous connected hub, one focal composition, showing customer intake and intelligent assignment. No charts, no money. Style: sophisticated photorealistic product visualization, cinematic studio lighting, tactile premium materials, matte midnight blue background #0a0f18, vibrant but restrained cyan and electric blue accents, warm secondary highlights, crisp forms, interesting depth. Composition: main subject centered, entirely within central 75% of width and 70% of height, generous breathing room, strong clear silhouette, intentional composition, no tiny details. Full bleed, no border or frame. Constraints: exactly one cohesive image; NO text, letters, words, numbers, logos, labels, screenshots, dashboard UIs, fake metrics, watermarks, or collage. Artwork represents the project concept, not an actual software screenshot.",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "judicial-fees",
+      "file": "src/assets/images/projects/covers/judicial-fees.webp",
+      "prompt": "Use case: stylized-concept. Asset type: editorial cover artwork for a software engineer portfolio project card, wide 16:9 landscape composition, 1536x864 or equivalent. Primary request: striking premium conceptual 3D still life that clearly communicates the project's purpose at thumbnail size. Subject: A beautifully crafted brushed-gold balance of justice beside a frosted glass calculator and a neat stack of legal documents with simple geometric line markings, on a deep midnight navy desk. One luminous verified cyan seal connects calculator to legal document; no national emblems, no courtroom or official government logo. Style: sophisticated photorealistic product visualization, cinematic studio lighting, tactile premium materials, matte midnight blue background #0a0f18, vibrant but restrained cyan and electric blue accents, warm secondary highlights, crisp forms, interesting depth. Composition: main subject centered, entirely within central 75% of width and 70% of height, generous breathing room, strong clear silhouette, intentional composition, no tiny details. Full bleed, no border or frame. Constraints: exactly one cohesive image; NO text, letters, words, numbers, logos, labels, screenshots, dashboard UIs, fake metrics, watermarks, or collage. Artwork represents the project concept, not an actual software screenshot.",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "military-mess",
+      "file": "src/assets/images/projects/covers/military-mess.webp",
+      "prompt": "Use case: stylized-concept. Asset type: editorial cover artwork for a software engineer portfolio project card, wide 16:9 landscape composition, 1536x864 or equivalent. Primary request: striking premium conceptual 3D still life that clearly communicates the project's purpose at thumbnail size. Subject: An elegant isometric warehouse of neatly stacked food supply crates and translucent inventory cubes, fresh ingredient trays and a simple meal tray in foreground. A restrained glowing stock path links stored supplies with meal planning. Logistics and food stock management, no weapons, no soldiers. Style: sophisticated photorealistic product visualization, cinematic studio lighting, tactile premium materials, matte midnight blue background #0a0f18, vibrant but restrained cyan and electric blue accents, warm secondary highlights, crisp forms, interesting depth. Composition: main subject centered, entirely within central 75% of width and 70% of height, generous breathing room, strong clear silhouette, intentional composition, no tiny details. Full bleed, no border or frame. Constraints: exactly one cohesive image; NO text, letters, words, numbers, logos, labels, screenshots, dashboard UIs, fake metrics, watermarks, or collage. Artwork represents the project concept, not an actual software screenshot.",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "akf-referee-exams",
+      "file": "src/assets/images/projects/covers/akf-referee-exams.webp",
+      "prompt": "Use case: stylized-concept. Asset type: editorial cover artwork for a software engineer portfolio project card. Wide 16:9 landscape, 1536x864 or equivalent. Primary request: striking premium conceptual 3D still life that clearly communicates the project's purpose at thumbnail size. Subject: A white karate referee flag and a red karate referee flag, a sleek minimal tablet with a bold circular countdown ring and three clean answer tiles without writing, a small gold referee whistle. Sophisticated sports certification examination concept, red accent balanced with cyan light, no people, no federation logos. Style: sophisticated photorealistic product visualization, cinematic studio lighting, tactile premium materials, matte midnight navy #0a0f18 background, luminous cyan/electric blue accents with restrained subject-specific color, crisp forms and realistic reflections. Composition: main subjects centered within central 75% width and 70% height, generous breathing room, clear silhouette and strong depth. Full bleed. Constraints: one cohesive scene; NO text, letters, words, numbers, logos, labels, screenshot UI, fake statistics, watermark, collage, or border. Communicate concept rather than literal software screenshot.",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "karate-learning",
+      "file": "src/assets/images/projects/covers/karate-learning.webp",
+      "prompt": "Use case: stylized-concept. Asset type: editorial cover artwork for a software engineer portfolio project card. Wide 16:9 landscape, 1536x864 or equivalent. Primary request: striking premium conceptual 3D still life that clearly communicates the project's purpose at thumbnail size. Subject: A beautifully folded pristine white karate gi with a black belt, placed beside an open frosted-glass book with subtle pictogram movement sequences, and a small red-and-blue competition mat element. Martial arts rules learning and preparation, confident sports editorial still life, no people. Style: sophisticated photorealistic product visualization, cinematic studio lighting, tactile premium materials, matte midnight navy #0a0f18 background, luminous cyan/electric blue accents with restrained subject-specific color, crisp forms and realistic reflections. Composition: main subjects centered within central 75% width and 70% height, generous breathing room, clear silhouette and strong depth. Full bleed. Constraints: one cohesive scene; NO text, letters, words, numbers, logos, labels, screenshot UI, fake statistics, watermark, collage, or border. Communicate concept rather than literal software screenshot.",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "medibook",
+      "file": "src/assets/images/projects/covers/medibook.webp",
+      "prompt": "Use case: stylized-concept. Asset type: editorial cover artwork for a software engineer portfolio project card. Wide 16:9 landscape, 1536x864 or equivalent. Primary request: striking premium conceptual 3D still life that clearly communicates the project's purpose at thumbnail size. Subject: A premium brushed-metal stethoscope curves around a translucent glass appointment calendar with a single turquoise checked date tile, with a clean white medical cross sculptural block behind it. Healthcare appointment booking, welcoming and precise, no pills, no patient details. Style: sophisticated photorealistic product visualization, cinematic studio lighting, tactile premium materials, matte midnight navy #0a0f18 background, luminous cyan/electric blue accents with restrained subject-specific color, crisp forms and realistic reflections. Composition: main subjects centered within central 75% width and 70% height, generous breathing room, clear silhouette and strong depth. Full bleed. Constraints: one cohesive scene; NO text, letters, words, numbers, logos, labels, screenshot UI, fake statistics, watermark, collage, or border. Communicate concept rather than literal software screenshot.",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "madms",
+      "file": "src/assets/images/projects/covers/madms.webp",
+      "prompt": "Use case: stylized-concept. Asset type: editorial cover artwork for a software engineer portfolio project card. Wide 16:9 landscape, 1536x864 or equivalent. Primary request: striking premium conceptual 3D still life that clearly communicates the project's purpose at thumbnail size. Subject: A sculptural connected enterprise campus: three minimal architectural blocks on a dark plinth, translucent student identity cards, a simple attendance check tile, and a central secure glass data core. Cohesive institutional management and modular backend concept, no people, no university logos. Style: sophisticated photorealistic product visualization, cinematic studio lighting, tactile premium materials, matte midnight navy #0a0f18 background, luminous cyan/electric blue accents with restrained subject-specific color, crisp forms and realistic reflections. Composition: main subjects centered within central 75% width and 70% height, generous breathing room, clear silhouette and strong depth. Full bleed. Constraints: one cohesive scene; NO text, letters, words, numbers, logos, labels, screenshot UI, fake statistics, watermark, collage, or border. Communicate concept rather than literal software screenshot.",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "elegant-accessories",
+      "file": "src/assets/images/projects/covers/elegant-accessories.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium portfolio project card artwork, landscape 16:9 1536x864 or equivalent. Primary request: visually striking cover that makes the domain immediately recognizable at small size. Subject: Luxury jewelry campaign still life: a beautifully sculpted gold necklace, polished gold hoop earrings and a deep sapphire gemstone displayed on midnight navy velvet and dark stone plinths. Elegant high-end boutique commerce, dramatic warm gold highlights against deep blue shadows, restrained cool rim lighting; beautifully photographed product composition, not neon. Style: premium photorealistic 3D product/editorial render, art-directed studio lighting, realistic materials, deep navy #0a0f18 environment, rich restrained subject-specific accents, clear main subject with beautiful depth. Composition: centered with generous breathing room; objects stay within central 75% of frame. Full bleed single scene. Constraints: NO text, letters, words, numbers, labels, logos, UI screenshots, fake metrics, watermarks, collage, or borders.",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "growify-digital",
+      "file": "src/assets/images/projects/covers/growify-digital.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium portfolio project card artwork, landscape 16:9 1536x864 or equivalent. Primary request: visually striking cover that makes the domain immediately recognizable at small size. Subject: Digital agency growth concept: a graceful translucent emerald and cyan architectural staircase rises around a small sculptural botanical leaf, with three floating frosted browser-shaped panels containing only abstract geometric shapes. Refined digital brand design, emerald highlights, strong clean composition; no marketing statistics. Style: premium photorealistic 3D product/editorial render, art-directed studio lighting, realistic materials, deep navy #0a0f18 environment, rich restrained subject-specific accents, clear main subject with beautiful depth. Composition: centered with generous breathing room; objects stay within central 75% of frame. Full bleed single scene. Constraints: NO text, letters, words, numbers, labels, logos, UI screenshots, fake metrics, watermarks, collage, or borders.",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "elevatex-digital",
+      "file": "src/assets/images/projects/covers/elevatex-digital.webp",
+      "prompt": "Use case: stylized-concept. Asset type: premium portfolio project card artwork, landscape 16:9 1536x864 or equivalent. Primary request: visually striking cover that makes the domain immediately recognizable at small size. Subject: Digital agency launch concept: a beautiful brushed chrome origami rocket lifting between translucent violet and electric blue browser-shaped sheets, with elegant ribbons of light tracing its path and soft reflections on a dark studio floor. Refined professional creative web development, not a cartoon spaceship. Style: premium photorealistic 3D product/editorial render, art-directed studio lighting, realistic materials, deep navy #0a0f18 environment, rich restrained subject-specific accents, clear main subject with beautiful depth. Composition: centered with generous breathing room; objects stay within central 75% of frame. Full bleed single scene. Constraints: NO text, letters, words, numbers, labels, logos, UI screenshots, fake metrics, watermarks, collage, or borders.",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "ai-chat-assistant",
+      "file": "src/assets/images/projects/covers/ai-chat-assistant.webp",
+      "prompt": "Use case: stylized-concept. Asset type: software engineering portfolio cover image, landscape 16:9 at 1536x864 or equivalent. Primary request: premium art-directed visual that clearly conveys project domain at thumbnail size. Subject: A friendly sophisticated small chrome assistant robot head with luminous cyan eyes, accompanied by two elegant floating frosted-glass chat bubbles containing only three simple dots each. Human-centered AI conversation concept, navy and cyan with small violet highlights, premium hardware product photography feel, no speech text. Style: sophisticated photorealistic 3D product visualization, cinematic studio lighting, tactile metal and glass, midnight navy #0a0f18 environment, restrained cyan/electric blue plus domain-specific accents, bold readable silhouette and realistic reflections. Composition: generous negative space around centered subject, all key objects inside central 75% of frame. Full bleed, one cohesive scene. Constraints: NO text, letters, words, numbers, labels, logos, screenshot UI, fake statistics, watermarks, collage, or borders. This is conceptual artwork, not a software screenshot.",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "ecommerce-dashboard",
+      "file": "src/assets/images/projects/covers/ecommerce-dashboard.webp",
+      "prompt": "Use case: stylized-concept. Asset type: software engineering portfolio cover image, landscape 16:9 at 1536x864 or equivalent. Primary request: premium art-directed visual that clearly conveys project domain at thumbnail size. Subject: A beautifully made miniature chrome shopping cart carrying three unbranded parcels, next to a translucent glass bar-chart sculpture and a floating circular analytics ring. E-commerce business insights concept, amber packaging, turquoise glass, elegant realistic studio materials; charts have no ticks, values, or written statistics. Style: sophisticated photorealistic 3D product visualization, cinematic studio lighting, tactile metal and glass, midnight navy #0a0f18 environment, restrained cyan/electric blue plus domain-specific accents, bold readable silhouette and realistic reflections. Composition: generous negative space around centered subject, all key objects inside central 75% of frame. Full bleed, one cohesive scene. Constraints: NO text, letters, words, numbers, labels, logos, screenshot UI, fake statistics, watermarks, collage, or borders. This is conceptual artwork, not a software screenshot.",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "data-analysis-app",
+      "file": "src/assets/images/projects/covers/data-analysis-app.webp",
+      "prompt": "Use case: stylized-concept. Asset type: software engineering portfolio cover image, landscape 16:9 at 1536x864 or equivalent. Primary request: premium art-directed visual that clearly conveys project domain at thumbnail size. Subject: A beautiful optical glass prism transforms a flowing cluster of small blue glass data spheres into three orderly luminous ribbons and a simple sculptural chart. Raw data becoming structured insights, translucent cyan and violet glass, precise elegant science-meets-design still life, no writing, no metrics. Style: sophisticated photorealistic 3D product visualization, cinematic studio lighting, tactile metal and glass, midnight navy #0a0f18 environment, restrained cyan/electric blue plus domain-specific accents, bold readable silhouette and realistic reflections. Composition: generous negative space around centered subject, all key objects inside central 75% of frame. Full bleed, one cohesive scene. Constraints: NO text, letters, words, numbers, labels, logos, screenshot UI, fake statistics, watermarks, collage, or borders. This is conceptual artwork, not a software screenshot.",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "personal-portfolio",
+      "file": "src/assets/images/projects/covers/personal-portfolio.webp",
+      "prompt": "Use case: stylized-concept. Asset type: software engineering portfolio cover image, landscape 16:9 at 1536x864 or equivalent. Primary request: premium art-directed visual that clearly conveys project domain at thumbnail size. Subject: A premium slim dark laptop with softly glowing abstract code-shaped horizontal lines, surrounded by three floating frosted-glass project tiles with simple geometric forms, and a refined metal pen on the desk. Personal software developer portfolio, confident craftsmanship, electric blue and subtle violet studio rim light, no readable code or personal data. Style: sophisticated photorealistic 3D product visualization, cinematic studio lighting, tactile metal and glass, midnight navy #0a0f18 environment, restrained cyan/electric blue plus domain-specific accents, bold readable silhouette and realistic reflections. Composition: generous negative space around centered subject, all key objects inside central 75% of frame. Full bleed, one cohesive scene. Constraints: NO text, letters, words, numbers, labels, logos, screenshot UI, fake statistics, watermarks, collage, or borders. This is conceptual artwork, not a software screenshot.",
+      "width": 1672,
+      "height": 941
+    }
+  ]
+}

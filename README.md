@@ -84,10 +84,11 @@ To run this project locally, you need a local web server (to avoid CORS issues w
 ## Content updates
 
 - Add projects in `src/data/projects.js`; set `featured: true` to include them on the homepage. A project with `hasCaseStudy: true` also needs `projects/<id>/index.html`.
+- `cardImage` and `cardImageAlt` provide conceptual artwork for the homepage and project listing. Keep `coverImage` and `detailImages` for project detail images. Card artwork lives in `src/assets/images/projects/covers/` as compressed WebP files; its ImageGen prompts are recorded in `scripts/project-cover-prompts.json`.
 - Article metadata lives in `src/data/blog-posts.js`, with article bodies in `blog/<slug>/index.html`. Homepage articles and the blog listing are sorted by date, newest first.
 - Desktop and mobile Resume links in every page open the current Google Drive resume. Update all of these links when the resume's file ID changes.
 - The homepage and projects listing share `src/shared/ui/project-modal.js`. If Swiper is unavailable, featured projects use a grid and the rest of the homepage continues to initialize.
-- The Aethra CRM cover is a demonstration dashboard capture from [its public repository](https://github.com/Tarekattallah/Aethra-CRM/blob/main/docs/execution-workflow/sidebar-collapsed-fixed.jpg).
+- The Aethra CRM detail image is a demonstration dashboard capture from [its public repository](https://github.com/Tarekattallah/Aethra-CRM/blob/main/docs/execution-workflow/sidebar-collapsed-fixed.jpg).
 
 ## 🔧 Build Scripts
 

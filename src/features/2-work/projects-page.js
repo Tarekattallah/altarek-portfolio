@@ -1,5 +1,6 @@
 import { projectsData, getProjectById } from '../../data/projects.js';
 import { initProjectModal } from '../../shared/ui/project-modal.js';
+import { projectCardImage } from '../../shared/ui/project-card-image.js';
 
 export function initProjectsPage() {
     const gridWrapper = document.getElementById('projects-grid-wrapper');
@@ -31,20 +32,9 @@ export function initProjectsPage() {
         }
 
         gridWrapper.innerHTML = filtered.map((project, index) => {
-            let cardTopHTML = '';
-            let imagePath = project.coverImage;
-            if (imagePath && !imagePath.startsWith('http')) {
-                imagePath = '../' + imagePath;
-            }
-            if (project.coverImage) {
-                cardTopHTML = `<div class="h-48 bg-gray-800 bg-cover bg-center rounded-t-lg" style="background-image: url('${imagePath}')"></div>`;
-            } else {
-                cardTopHTML = `<div class="h-48 bg-gradient-to-br ${project.placeholderColor} flex items-center justify-center p-4 text-center rounded-t-lg">
-                    <span class="text-2xl font-bold text-white tracking-wider opacity-90">${project.placeholderText}</span>
-                </div>`;
-            }
+            const cardTopHTML = projectCardImage(project, { assetPrefix: '../', eager: index < 3 });
 
-            let badgeHTML = project.featured ? `<div class="absolute top-4 right-4 bg-yellow-500 text-yellow-950 text-xs font-bold px-2 py-1 rounded shadow-lg">Featured</div>` : '';
+            let badgeHTML = project.featured ? `<div class="project-card-badge absolute top-4 right-4 bg-yellow-500 text-yellow-950 text-xs font-bold px-2 py-1 rounded shadow-lg">Featured</div>` : '';
 
             return `
                 <div class="project-card-grid bg-gray-900 rounded-lg shadow-xl overflow-hidden flex flex-col transform transition-transform hover:-translate-y-2 hover:shadow-2xl relative reveal-up" style="animation-delay: ${index * 50}ms">

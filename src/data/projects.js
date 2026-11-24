@@ -1,6 +1,8 @@
 export const projectsData = [
     {
         id: 'aethra-crm',
+        cardImage: 'src/assets/images/projects/covers/aethra-crm.webp',
+        cardImageAlt: 'Concept artwork of client contacts routed to team workspaces',
         title: 'Aethra CRM — Client Intake & Project Delivery',
         shortDescription: 'A bilingual CRM connecting customer requests, intelligent routing, track-specific work orders, execution teams, and payment records.',
         longDescription: 'Aethra CRM manages the journey from an Arabic/English customer request to assigned work and delivery. It supports staff-assisted and voice intake, normalized customer profiles, round-robin, least-busy and skill-based routing, SLA escalation, and independent work orders for each service track. Execution teams collaborate through scoped workspaces, while payment records, protected attachments, role-based permissions, audit records, and SSE notifications keep operations connected.',
@@ -15,6 +17,8 @@ export const projectsData = [
     },
     {
         id: 'judicial-fees',
+        cardImage: 'src/assets/images/projects/covers/judicial-fees.webp',
+        cardImageAlt: 'Concept artwork of justice scales, a calculator, and legal documents',
         title: 'Egyptian Judicial Fees — Court Fee Calculation Platform',
         shortDescription: 'An Arabic RTL platform for court fee estimation and settlement review, with precise rule-based calculations and traceable legal references.',
         longDescription: 'Built during my Full Stack Development training at the Ministry of Justice. The platform estimates court fees and supports settlement review through precise, rule-based calculations, each linked to a traceable legal reference. It implements role-based access control, independent approval of calculation rules, SHA-256 hash-chained audit logs that make tampering detectable, and dashboards for tracking assessments and settlements — all backed by automated calculation and permission tests.',
@@ -23,12 +27,14 @@ export const projectsData = [
         tech: 'React / TypeScript / PostgreSQL',
         featured: true,
         hasCaseStudy: true,
-        githubUrl: null,
+        githubUrl: 'https://github.com/Tarekattallah/Judicial-Fees-Calculation-System',
         liveUrl: null,
         coverImage: 'src/assets/images/projects/judicial-fees.jpg',
     },
     {
         id: 'military-mess',
+        cardImage: 'src/assets/images/projects/covers/military-mess.webp',
+        cardImageAlt: 'Concept artwork connecting food inventory with meal planning',
         title: 'MessOps — Mess & Warehouse Management',
         shortDescription: 'A full-stack platform managing meals, inventory, requests, and reservations, with FEFO/FIFO stock allocation and operational dashboards.',
         longDescription: 'MessOps translates real-world mess and warehouse operations into structured software business logic. It manages meals, inventory, requests, and reservations, allocates stock using FEFO/FIFO rules, tracks expiry and reorder levels, and provides dashboards for inventory and operational tracking.',
@@ -43,6 +49,8 @@ export const projectsData = [
     },
     {
         id: 'akf-referee-exams',
+        cardImage: 'src/assets/images/projects/covers/akf-referee-exams.webp',
+        cardImageAlt: 'Concept artwork of referee flags, an exam timer, and a whistle',
         title: 'African Karate Federation — Referee Examinations',
         shortDescription: 'A referee examination platform with timed tests, automatic question progression, answer tracking, and automated scoring.',
         longDescription: 'Developed for the African Karate Federation Referees Committee. The platform runs timed referee examinations with automatic question progression, answer tracking, and automated scoring. Administrator and instructor roles manage exams and results centrally through a REST API backed by PostgreSQL.',
@@ -57,6 +65,8 @@ export const projectsData = [
     },
     {
         id: 'karate-learning',
+        cardImage: 'src/assets/images/projects/covers/karate-learning.webp',
+        cardImageAlt: 'Concept artwork of a karate uniform and an interactive rules book',
         title: 'Karate Learning — Learning & Examination Platform',
         shortDescription: 'A responsive platform for learning WKF Kata and Kumite rules and preparing for referee and coach examinations.',
         longDescription: 'Karate Learning helps athletes, referees, and coaches study the official WKF Kata and Kumite rules and then prove their knowledge. It includes authentication, timed exams, automated grading, and progress tracking.',
@@ -71,6 +81,8 @@ export const projectsData = [
     },
     {
         id: 'medibook',
+        cardImage: 'src/assets/images/projects/covers/medibook.webp',
+        cardImageAlt: 'Concept artwork of a stethoscope and appointment calendar',
         title: 'MediBook — Healthcare Appointment Booking',
         shortDescription: 'A full-stack appointment platform for patients, doctors, and administrators.',
         longDescription: 'MediBook is a full-stack healthcare appointment platform for patients, doctors, and administrators. It implements JWT authentication, role-based access control, appointment workflows, and REST APIs backed by MongoDB, with a responsive React frontend.',
@@ -85,6 +97,8 @@ export const projectsData = [
     },
     {
         id: 'madms',
+        cardImage: 'src/assets/images/projects/covers/madms.webp',
+        cardImageAlt: 'Concept artwork of a campus connected to a secure management system',
         title: 'MADMS — Enterprise Management System',
         shortDescription: 'A modular enterprise management system designed with a scalable backend architecture and structured business modules.',
         longDescription: 'MADMS is a modular enterprise management system built to handle complex business operations including student management, attendance, complaint handling, phone requests, and master data. The project highlights separation of concerns, robust RBAC, input validation, and a scalable Controller → Service → Repository → Model architecture.',
@@ -99,6 +113,8 @@ export const projectsData = [
     },
     {
         id: 'elegant-accessories',
+        cardImage: 'src/assets/images/projects/covers/elegant-accessories.webp',
+        cardImageAlt: 'Concept artwork of gold jewelry and a sapphire boutique display',
         title: 'Elegant-Accessories',
         shortDescription: 'Modern, responsive website template for luxury jewelry and fashion products, featuring clean design and smooth animations.',
         longDescription: 'Elegant Accessories is a modern and responsive website template designed for showcasing luxury jewelry and fashion products. It features a clean, elegant design with smooth animations and user-friendly layouts — perfect for boutiques or brands aiming for a stylish online presence.',
@@ -114,6 +130,8 @@ export const projectsData = [
     },
     {
         id: 'growify-digital',
+        cardImage: 'src/assets/images/projects/covers/growify-digital.webp',
+        cardImageAlt: 'Concept artwork of a growing digital brand with emerald browser panels',
         title: 'Growify-Digital',
         shortDescription: 'Dark-themed, responsive landing page showcasing services, portfolio, team, and testimonials. Built with HTML, CSS, Bootstrap, and JS.',
         longDescription: 'Growify Digital is a modern, fully responsive dark-themed landing page for a digital agency. The website showcases services, workflow, portfolio projects, team members, client testimonials, and features an interactive contact form. Built with HTML, CSS, Bootstrap, and vanilla JavaScript, the site emphasizes clean design, smooth animations, and an engaging user experience across all devices.',
@@ -129,6 +147,8 @@ export const projectsData = [
     },
     {
         id: 'elevatex-digital',
+        cardImage: 'src/assets/images/projects/covers/elevatex-digital.webp',
+        cardImageAlt: 'Concept artwork of a digital agency launch with a chrome rocket',
         title: 'ElevateX Digital',
         shortDescription: 'A modern, responsive landing page for a digital agency featuring smooth animations, interactive UI, and a dark professional theme.',
         longDescription: 'ElevateX Digital is a modern and fully responsive landing page created for a digital agency. The website presents a professional showcase of the agency’s services, workflow, team, and contact options, combining sleek design with smooth animations and interactive elements to deliver an engaging user experience. Built entirely with HTML, CSS, and JavaScript, the project demonstrates clean and modular code, an intuitive interface, and a polished dark theme that enhances readability and aesthetics.',
@@ -144,6 +164,8 @@ export const projectsData = [
     },
     {
         id: 'ai-chat-assistant',
+        cardImage: 'src/assets/images/projects/covers/ai-chat-assistant.webp',
+        cardImageAlt: 'Concept artwork of a friendly AI assistant with chat bubbles',
         title: 'AI Chat Assistant',
         shortDescription: 'An AI-powered conversational application focused on creating an interactive assistant experience.',
         longDescription: 'An AI-powered conversational application designed to demonstrate interactive web interfaces and real-time user input processing. The project focuses on providing a smooth chat experience with modern UI components.',
@@ -158,6 +180,8 @@ export const projectsData = [
     },
     {
         id: 'ecommerce-dashboard',
+        cardImage: 'src/assets/images/projects/covers/ecommerce-dashboard.webp',
+        cardImageAlt: 'Concept artwork of a shopping cart and commerce analytics',
         title: 'E-Commerce Dashboard',
         shortDescription: 'A dashboard application designed to present and manage e-commerce-related data through an organized visual interface.',
         longDescription: 'A responsive dashboard built to present business metrics and e-commerce data. Features a data-driven UI that organizes complex information into easily digestible charts, tables, and visual summaries.',
@@ -172,6 +196,8 @@ export const projectsData = [
     },
     {
         id: 'data-analysis-app',
+        cardImage: 'src/assets/images/projects/covers/data-analysis-app.webp',
+        cardImageAlt: 'Concept artwork of raw data transformed into structured insights',
         title: 'Data Analysis Application',
         shortDescription: 'A data-focused application designed to process, analyze, and present information in a useful visual format.',
         longDescription: 'An application tailored for processing and visualizing structured data. It aims to turn raw data into interactive and insightful visual presentations for better decision-making.',
@@ -186,6 +212,8 @@ export const projectsData = [
     },
     {
         id: 'personal-portfolio',
+        cardImage: 'src/assets/images/projects/covers/personal-portfolio.webp',
+        cardImageAlt: 'Concept artwork of a developer laptop and floating project tiles',
         title: 'Personal Portfolio',
         shortDescription: 'My personal developer portfolio showcasing my skills, projects, experience, and engineering journey.',
         longDescription: 'This portfolio serves as a central hub for my professional identity. Built with a focus on modern design, clean code, and modular architecture, it dynamically showcases my backend, full-stack, and enterprise engineering projects while maintaining high performance and a rich user experience.',

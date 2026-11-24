@@ -1,6 +1,7 @@
 import { getFeaturedProjects, getProjectById } from '../../data/projects.js';
 import { prefersReducedMotion } from '../../shared/ui/motion.js';
 import { initProjectModal } from '../../shared/ui/project-modal.js';
+import { projectCardImage } from '../../shared/ui/project-card-image.js';
 
 export function initWorkFeature() {
     const projectsWrapper = document.getElementById('projects-wrapper');
@@ -9,15 +10,8 @@ export function initWorkFeature() {
     const projectModal = initProjectModal();
     const featuredProjects = getFeaturedProjects();
 
-    featuredProjects.forEach(project => {
-        let cardTopHTML = '';
-        if (project.coverImage) {
-            cardTopHTML = `<div class="project-card__top" style="background-image: url('${project.coverImage}')"></div>`;
-        } else {
-            cardTopHTML = `<div class="project-card__top bg-gradient-to-br ${project.placeholderColor} flex items-center justify-center p-4 text-center">
-                <span class="text-2xl font-bold text-white tracking-wider opacity-90">${project.placeholderText}</span>
-            </div>`;
-        }
+    featuredProjects.forEach((project, index) => {
+        const cardTopHTML = projectCardImage(project, { eager: index < 2 });
 
         let linkIconHTML = '';
         if (project.hasCaseStudy) {

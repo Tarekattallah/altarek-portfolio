@@ -45,10 +45,28 @@
 }
 
 .project-card__top {
-    height: 200px;
-    background-size: cover;
-    background-position: center;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    flex-shrink: 0;
+    background: #0a0f18;
     border-bottom: 1px solid #30363d;
+}
+
+.project-card__top img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.project-card-badge {
+    z-index: 1;
+}
+
+.project-card:hover .project-card__top img,
+.project-card-grid:hover .project-card__top img {
+    transform: scale(1.04);
 }
 
 .project-card__content {
