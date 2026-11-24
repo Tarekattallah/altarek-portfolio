@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alzajerat — Shopify Store Development | Client Work</title>
+
+    <meta name="description" content="A delivered Shopify client project with recorded before-and-after views of the storefront, department navigation, responsive layout, and footer.">
+
+    <link rel="canonical" href="https://altarek-portfolio.vercel.app/projects/alzajerat-shopify/">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Al-Tarek Attallah">
+    <meta property="og:url" content="https://altarek-portfolio.vercel.app/projects/alzajerat-shopify/">
+    <meta property="og:title" content="Alzajerat — Shopify Store Development | Client Work">
+    <meta property="og:description" content="A delivered Shopify client project with recorded before-and-after views of the storefront, department navigation, responsive layout, and footer.">
+    <meta property="og:image" content="https://altarek-portfolio.vercel.app/src/assets/images/projects/covers/alzajerat-shopify.webp">
+    <meta property="og:image:width" content="1536">
+    <meta property="og:image:height" content="864">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/svg+xml" href="../../src/assets/images/logo-pro.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../../src/assets/css/global.css">
+    <link rel="stylesheet" href="../../src/features/2-work/client-case-study.css">
+    <link rel="stylesheet" href="../../src/assets/css/tailwind.css">
+</head>
+<body class="overflow-x-hidden bg-[#0a0f18]">
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Header -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 bg-gray-900/80 backdrop-blur-sm transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="../../index.html" class="text-2xl font-bold text-white flex items-center gap-2 transform hover:scale-105 transition-transform">
+                <img src="../../src/assets/images/logo-pro.svg" alt="T. Attallah Logo" class="w-10 h-10 rounded-full object-cover border-2 border-blue-600">
+                <span>T. Attallah</span>
+            </a>
+            <nav class="hidden lg:flex items-center space-x-8">
+                <a href="../../index.html#home" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Home</a>
+                <a href="../../index.html#work" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Work</a>
+                <a href="../../index.html#about" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">About</a>
+                <a href="../../index.html#experience" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Experience</a>
+                <a href="../../blog/" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Blog</a>
+                <a href="../../index.html#contact" class="nav-item text-gray-300 hover:text-blue-500 transition duration-300">Contact</a>
+                <a href="https://drive.google.com/file/d/14XI5V9rT21khh1foOg0y53cxEfvmdgaq/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Resume</a>
+            </nav>
+            <button id="mobile-menu-btn" class="lg:hidden text-white" title="Open mobile menu" aria-label="Open mobile menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden px-6 pb-4 bg-gray-900/80 backdrop-blur-sm">
+            <a href="../../index.html#home" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Home</a>
+            <a href="../../index.html#work" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Work</a>
+            <a href="../../index.html#about" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">About</a>
+            <a href="../../index.html#experience" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Experience</a>
+            <a href="../../blog/" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Blog</a>
+            <a href="../../index.html#contact" class="block py-2 text-gray-300 hover:text-blue-500 transition duration-300">Contact</a>
+            <a href="https://drive.google.com/file/d/14XI5V9rT21khh1foOg0y53cxEfvmdgaq/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="block mt-2 text-center bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Resume</a>
+        </div>
+    </header>
+
+    <main class="pt-32 pb-20 container mx-auto px-6 min-h-screen client-case" data-project-slug="alzajerat-shopify">
+
+        <div class="mb-8">
+            <a href="../" class="text-gray-400 hover:text-blue-500 flex items-center gap-2 transition-colors w-fit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Back to Projects
+            </a>
+        </div>
+
+        <article>
+            <header class="mb-8 text-center md:text-left">
+                <span class="text-blue-500 font-semibold uppercase tracking-wider mb-4 block">Client Work / E-Commerce</span>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">Alzajerat — Shopify Store Development</h1>
+                <p class="text-xl text-gray-400 leading-relaxed max-w-3xl">A storefront redesigned for clearer browsing, with the delivered experience preserved in project recordings.</p>
+                <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 mt-8">
+                    <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded text-sm font-medium">Shopify</span>
+                    <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded text-sm font-medium">Theme Customization</span>
+                    <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded text-sm font-medium">Responsive Design</span>
+                    <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded text-sm font-medium">Markets &amp; Languages</span>
+                </div>
+                <div class="mt-6 flex justify-center md:justify-start">
+                    <a href="#comparison" class="inline-flex items-center bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2.5 px-6 rounded-lg transition duration-300">Explore Before &amp; Delivered</a>
+                </div>
+            </header>
+
+            <aside class="delivery-note" aria-label="Project delivery archive">
+                <strong>Delivered client project</strong>
+                <span>These captures preserve the version I delivered. Later changes to the live store are outside this showcase.</span>
+            </aside>
+
+            <figure class="delivery-hero">
+                <a href="../../src/assets/images/projects/alzajerat-shopify/after-responsive.webp" target="_blank" rel="noopener noreferrer" aria-label="Open the recorded responsive delivery capture full size">
+                    <img src="../../src/assets/images/projects/alzajerat-shopify/after-responsive.webp" alt="The delivered Alzajerat storefront shown on phone, tablet, and desktop in the project recording" width="1836" height="744" fetchpriority="high" decoding="async">
+                </a>
+                <figcaption class="capture-caption">Recorded delivery preview across phone, tablet, and desktop. Open the image to inspect the original capture.</figcaption>
+            </figure>
+
+            <section class="case-section" aria-labelledby="overview-heading">
+                <h2 id="overview-heading">The Client Brief</h2>
+                <p>Alzajerat needed development of its existing Shopify store: a more coherent storefront, organized product browsing, and the configuration needed to sell across its selected markets. My role covered the customer-facing design and the store setup behind it.</p>
+                <div class="scope-grid">
+                    <div class="scope-card"><h3>Storefront &amp; Theme</h3><p>Customized the visual identity, typography, colors, homepage sections, navigation, and responsive presentation.</p></div>
+                    <div class="scope-card"><h3>Catalog &amp; Suppliers</h3><p>Prepared the product catalog, descriptions, collections, and supplier connections, with clearer routes into the store's departments.</p></div>
+                    <div class="scope-card"><h3>Markets &amp; Languages</h3><p>Configured the selected markets, languages, and currency presentation as part of the delivered Shopify setup.</p></div>
+                    <div class="scope-card"><h3>Checkout &amp; Operations</h3><p>Completed the agreed payment, shipping, and tax settings, alongside the storefront and catalog work.</p></div>
+                </div>
+            </section>
+
+            <section id="comparison" class="case-section" aria-labelledby="comparison-heading">
+                <h2 id="comparison-heading">Before &amp; Delivered</h2>
+                <p>Selected views from the original and delivery recordings show how department browsing and the footer changed. Each capture retains its recorded scroll position; use Before and Delivered to inspect the two versions.</p>
+            <div class="comparison-card" data-comparison>
+                <div class="comparison-heading">
+                    <h3>Department Browsing</h3>
+                    <div class="comparison-switch" role="tablist" aria-label="Department Browsing comparison" hidden>
+                        <button type="button" role="tab" id="departments-before-tab" aria-controls="departments-before-panel" data-phase="before">Before</button>
+                        <button type="button" role="tab" id="departments-after-tab" aria-controls="departments-after-panel" data-phase="after">Delivered</button>
+                    </div>
+                </div>
+                <figure class="capture-panel" id="departments-before-panel" aria-labelledby="departments-before-tab" data-phase-panel="before">
+                    <img src="../../src/assets/images/projects/alzajerat-shopify/before-departments.webp" alt="Before development: The original department links within the earlier page layout." width="1908" height="882" loading="lazy" decoding="async">
+                    <figcaption class="capture-caption">Before development · The original department links within the earlier page layout.</figcaption>
+                    <a class="capture-link" href="../../src/assets/images/projects/alzajerat-shopify/before-departments.webp" target="_blank" rel="noopener noreferrer">Open original capture</a>
+                </figure>
+                <figure class="capture-panel" id="departments-after-panel" aria-labelledby="departments-after-tab" data-phase-panel="after">
+                    <img src="../../src/assets/images/projects/alzajerat-shopify/after-departments.webp" alt="Delivered version: Departments organized into a compact visual browsing block." width="1908" height="882" loading="lazy" decoding="async">
+                    <figcaption class="capture-caption">Delivered version · Departments organized into a compact visual browsing block.</figcaption>
+                    <a class="capture-link" href="../../src/assets/images/projects/alzajerat-shopify/after-departments.webp" target="_blank" rel="noopener noreferrer">Open delivery capture</a>
+                </figure>
+            </div>
+            <div class="comparison-card" data-comparison>
+                <div class="comparison-heading">
+                    <h3>Newsletter &amp; Footer</h3>
+                    <div class="comparison-switch" role="tablist" aria-label="Newsletter &amp; Footer comparison" hidden>
+                        <button type="button" role="tab" id="footer-before-tab" aria-controls="footer-before-panel" data-phase="before">Before</button>
+                        <button type="button" role="tab" id="footer-after-tab" aria-controls="footer-after-panel" data-phase="after">Delivered</button>
+                    </div>
+                </div>
+                <figure class="capture-panel" id="footer-before-panel" aria-labelledby="footer-before-tab" data-phase-panel="before">
+                    <img src="../../src/assets/images/projects/alzajerat-shopify/before-footer.webp" alt="Before development: The original support, newsletter, and footer presentation." width="1908" height="882" loading="lazy" decoding="async">
+                    <figcaption class="capture-caption">Before development · The original support, newsletter, and footer presentation.</figcaption>
+                    <a class="capture-link" href="../../src/assets/images/projects/alzajerat-shopify/before-footer.webp" target="_blank" rel="noopener noreferrer">Open original capture</a>
+                </figure>
+                <figure class="capture-panel" id="footer-after-panel" aria-labelledby="footer-after-tab" data-phase-panel="after">
+                    <img src="../../src/assets/images/projects/alzajerat-shopify/after-footer.webp" alt="Delivered version: A structured newsletter, shop links, customer care, and regional selector." width="1908" height="882" loading="lazy" decoding="async">
+                    <figcaption class="capture-caption">Delivered version · A structured newsletter, shop links, customer care, and regional selector.</figcaption>
+                    <a class="capture-link" href="../../src/assets/images/projects/alzajerat-shopify/after-footer.webp" target="_blank" rel="noopener noreferrer">Open delivery capture</a>
+                </figure>
+            </div>
+            </section>
+
+            <section class="case-section" aria-labelledby="details-heading">
+                <h2 id="details-heading">A Closer Look at Delivery</h2>
+                <p>The delivered homepage combines search, navigation, a defined hero, and product discovery. The mobile capture shows the corresponding menu and department structure.</p>
+                <div class="delivery-details">
+                    <figure class="delivery-detail">
+                        <a href="../../src/assets/images/projects/alzajerat-shopify/after-homepage.webp" target="_blank" rel="noopener noreferrer" aria-label="Open the delivered desktop homepage full size"><img src="../../src/assets/images/projects/alzajerat-shopify/after-homepage.webp" alt="Delivered desktop homepage with search, navigation, and the Alzajerat campaign hero" width="1908" height="882" loading="lazy" decoding="async"></a>
+                        <figcaption class="capture-caption">Delivered desktop homepage, extracted from the project recording.</figcaption>
+                    </figure>
+                    <figure class="delivery-detail delivery-detail--mobile">
+                        <a href="../../src/assets/images/projects/alzajerat-shopify/after-mobile-navigation.webp" target="_blank" rel="noopener noreferrer" aria-label="Open the delivered mobile navigation full size"><img src="../../src/assets/images/projects/alzajerat-shopify/after-mobile-navigation.webp" alt="Delivered mobile menu grouping the store's navigation and shopping departments" width="318" height="680" loading="lazy" decoding="async"></a>
+                        <figcaption class="capture-caption">Delivered mobile navigation.</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section class="case-section" aria-labelledby="outcome-heading">
+                <h2 id="outcome-heading">The Delivered Outcome</h2>
+                <p>The completed project brought the storefront design, product organization, and store configuration together into one handoff. The recordings document the visual delivery: a clearer hierarchy, grouped departments, consistent navigation, and a more structured footer.</p>
+                <p>This archive shows the project as delivered, using selected frames from the supplied before-and-after recordings.</p>
+            </section>
+        </article>
+
+    </main>
+
+    <footer class="py-6 text-center text-gray-500 border-t border-gray-800">
+        <p>Designed & Built by Al-Tarek Attallah</p>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button id="scrollToTopBtn" class="fixed bottom-8 right-8 w-12 h-12 bg-blue-600/80 backdrop-blur-sm text-white rounded-full hidden justify-center items-center shadow-lg hover:bg-blue-500 transition-all duration-300 translate-y-20 z-40">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" /></svg>
+    </button>
+
+
+    <script type="module">
+        import { initGeneralUI } from '../../src/shared/ui/ui.js';
+        import { initParticles } from '../../src/shared/ui/particles.js';
+        import { initClientCaseStudy } from '../../src/features/2-work/client-case-study.js';
+        document.addEventListener('DOMContentLoaded', () => {
+            initGeneralUI();
+            initParticles();
+            initClientCaseStudy();
+        });
+    </script>
+</body>
+</html>

@@ -34,7 +34,7 @@ export function initProjectsPage() {
         gridWrapper.innerHTML = filtered.map((project, index) => {
             const cardTopHTML = projectCardImage(project, { assetPrefix: '../', eager: index < 3 });
 
-            let badgeHTML = project.featured ? `<div class="project-card-badge absolute top-4 right-4 bg-yellow-500 text-yellow-950 text-xs font-bold px-2 py-1 rounded shadow-lg">Featured</div>` : '';
+            let badgeHTML = project.featured ? `<div class="project-card-badge absolute top-4 right-4 bg-yellow-500 text-yellow-950 text-xs font-bold px-2 py-1 rounded shadow-lg">${project.engagement || 'Featured'}</div>` : '';
 
             return `
                 <div class="project-card-grid bg-gray-900 rounded-lg shadow-xl overflow-hidden flex flex-col transform transition-transform hover:-translate-y-2 hover:shadow-2xl relative reveal-up" style="animation-delay: ${index * 50}ms">

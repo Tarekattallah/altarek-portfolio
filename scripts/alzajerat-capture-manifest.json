@@ -1,0 +1,117 @@
+{
+  "method": "Frames extracted from project recordings; no AI reconstruction.",
+  "captures": [
+    {
+      "file": "src/assets/images/projects/alzajerat-shopify/before-departments.webp",
+      "recording": "Screen Recording 2026-11-02 194910.mp4",
+      "stage": "before",
+      "seconds": 4.5,
+      "crop": [
+        0,
+        3,
+        1908,
+        883
+      ],
+      "size": [
+        1908,
+        882
+      ]
+    },
+    {
+      "file": "src/assets/images/projects/alzajerat-shopify/before-footer.webp",
+      "recording": "Screen Recording 2026-11-02 194910.mp4",
+      "stage": "before",
+      "seconds": 39.5,
+      "crop": [
+        0,
+        3,
+        1908,
+        883
+      ],
+      "size": [
+        1908,
+        882
+      ]
+    },
+    {
+      "file": "src/assets/images/projects/alzajerat-shopify/after-homepage.webp",
+      "recording": "Screen Recording 2026-11-08 032041.mp4",
+      "stage": "after",
+      "seconds": 25.6,
+      "crop": [
+        0,
+        3,
+        1908,
+        883
+      ],
+      "size": [
+        1908,
+        882
+      ]
+    },
+    {
+      "file": "src/assets/images/projects/alzajerat-shopify/after-departments.webp",
+      "recording": "Screen Recording 2026-11-08 032041.mp4",
+      "stage": "after",
+      "seconds": 29.0,
+      "crop": [
+        0,
+        3,
+        1908,
+        883
+      ],
+      "size": [
+        1908,
+        882
+      ]
+    },
+    {
+      "file": "src/assets/images/projects/alzajerat-shopify/after-footer.webp",
+      "recording": "Screen Recording 2026-11-08 032041.mp4",
+      "stage": "after",
+      "seconds": 39.5,
+      "crop": [
+        0,
+        3,
+        1908,
+        883
+      ],
+      "size": [
+        1908,
+        882
+      ]
+    },
+    {
+      "file": "src/assets/images/projects/alzajerat-shopify/after-responsive.webp",
+      "recording": "Screen Recording 2026-11-08 032041.mp4",
+      "stage": "after",
+      "seconds": 1.8,
+      "crop": [
+        48,
+        140,
+        1836,
+        744
+      ],
+      "size": [
+        1836,
+        744
+      ]
+    },
+    {
+      "file": "src/assets/images/projects/alzajerat-shopify/after-mobile-navigation.webp",
+      "recording": "Screen Recording 2026-11-08 032041.mp4",
+      "stage": "after",
+      "seconds": 0.5,
+      "crop": [
+        82,
+        164,
+        318,
+        680
+      ],
+      "size": [
+        318,
+        680
+      ]
+    }
+  ]
+}

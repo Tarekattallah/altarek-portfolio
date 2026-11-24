@@ -1,5 +1,22 @@
 export const projectsData = [
     {
+        id: 'alzajerat-shopify',
+        cardImage: 'src/assets/images/projects/covers/alzajerat-shopify.webp',
+        cardImageAlt: 'Recorded delivery of the Alzajerat Shopify storefront on phone, tablet, and desktop',
+        title: 'Alzajerat — Shopify Store Development',
+        shortDescription: 'A delivered client storefront covering responsive theme customization, product organization, markets, languages, payments, shipping, and supplier setup.',
+        longDescription: 'Delivered the development of an existing Shopify store for Alzajerat: theme and storefront customization, product catalog organization, multilingual and market configuration, payment and shipping settings, and supplier integration. The case study uses before-and-after frames from the project recordings to preserve the delivered design, including its desktop, tablet, and mobile presentation. The current client-managed store is outside this archived showcase.',
+        category: 'E-Commerce',
+        engagement: 'Client Work',
+        tags: ['Shopify', 'Theme Customization', 'Responsive Design', 'Product Catalog', 'Markets & Languages', 'Payments & Shipping'],
+        tech: 'Shopify / E-Commerce',
+        featured: true,
+        hasCaseStudy: true,
+        githubUrl: null,
+        liveUrl: null,
+        coverImage: 'src/assets/images/projects/alzajerat-shopify/after-homepage.webp',
+    },
+    {
         id: 'aethra-crm',
         cardImage: 'src/assets/images/projects/covers/aethra-crm.webp',
         cardImageAlt: 'Concept artwork of client contacts routed to team workspaces',
