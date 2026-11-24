@@ -1,10 +1,10 @@
 const drive = (id) => `https://drive.google.com/file/d/${id}/view`;
 
-// Featured certifications are shown as cards; the rest appear in the expandable course list.
+// Spotlight credentials lead the section; other featured programs precede the course library.
 export const certifications = [
     // Featured
-    { name: 'AWS Certified Developer – Associate', issuer: 'Amazon Web Services', date: 'Oct 2026', url: drive('1mCMtoDf5htWzv3ib0oZ6BNs8-UTwzUFi'), featured: true },
-    { name: 'AWS Certified Cloud Practitioner (CLF-C02)', issuer: 'Amazon Web Services', date: 'Aug 2026', url: drive('1fxgTGpzydZFReLKEmt7FiYOGdcrcmVAH'), featured: true },
+    { name: 'AWS Certified Developer – Associate', issuer: 'Amazon Web Services', date: 'Oct 2026', url: drive('1mCMtoDf5htWzv3ib0oZ6BNs8-UTwzUFi'), featured: true, spotlight: true },
+    { name: 'AWS Certified Cloud Practitioner (CLF-C02)', issuer: 'Amazon Web Services', date: 'Aug 2026', url: drive('1fxgTGpzydZFReLKEmt7FiYOGdcrcmVAH'), featured: true, spotlight: true },
     { name: 'Meta Front-End Developer Professional Certificate', issuer: 'Meta / Coursera', date: 'May 2026', url: 'https://www.coursera.org/account/accomplishments/professional-cert/CFBLM7XQIT74', featured: true },
     { name: 'MITx 6.00.1x: Introduction to CS & Programming Using Python', issuer: 'MITx / edX', date: 'Mar 2026', url: 'https://courses.edx.org/certificates/b2a7aec368e8447eae42048bae0cf405', featured: true },
     { name: 'CS50’s Introduction to Databases with SQL', issuer: 'Harvard University / edX', date: 'Aug 2026', url: 'https://cs50.harvard.edu/certificates/6a98565a-26dd-4bf3-8315-9b6c4a06da7f', featured: true },
